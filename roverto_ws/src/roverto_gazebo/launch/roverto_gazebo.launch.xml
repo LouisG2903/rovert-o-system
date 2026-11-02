@@ -1,5 +1,11 @@
 <launch>
 
+    <!-- Use Gazebo clock (true in simulation) -->
+    <arg name="use_sim_time" default="true" description="Use simulation (Gazebo) clock if true"/>
+
+    <!-- Run Gazebo server-only with headless rendering (no GUI), e.g. for CI/automated tests -->
+    <arg name="headless" default="false" description="Run Gazebo without GUI (-s --headless-rendering)"/>
+
     <!-- URDF xacro path -->
     <let name="urdf_path"
          value="$(find-pkg-share roverto_description)/urdf/roverto.urdf.xacro" />
@@ -12,29 +18,35 @@
     <let name="gazebo_config_path"
          value="$(find-pkg-share roverto_gazebo)/config/gazebo_bridge.yaml" />
 
-    <!-- Robot State Publisher initialization -->
+    <!-- Robot State Publisher: publishes the static TF tree base_footprint -> base_link -> laser_frame
+         plus wheel TFs from /joint_states. odom -> base_footprint comes from DiffDrive via /tf. -->
     <node pkg="robot_state_publisher" exec="robot_state_publisher">
         <param name="robot_description"
-               value="$(command 'xacro $(var urdf_path)')" />
-        <param name="use_sim_time" value="true" />
+               value="$(command 'xacro $(var urdf_path)')"
+               type="str" />
+        <param name="use_sim_time" value="$(var use_sim_time)" />
     </node>
 
-    <!-- Configures Gazebo resource path so it resolves package assets -->
-    <set_env name="GZ_SIM_RESOURCE_PATH"
-             value="$(find-pkg-prefix roverto_description)/share" />
+    <!-- Append (never overwrite) so user/system Gazebo resource paths are preserved -->
+    <append_env name="GZ_SIM_RESOURCE_PATH"
+                value="$(find-pkg-prefix roverto_description)/share" />
 
     <!-- Gazebo starts with the tunnel world and simulation running (-r) -->
-    <include file="$(find-pkg-share ros_gz_sim)/launch/gz_sim.launch.py">
+    <include file="$(find-pkg-share ros_gz_sim)/launch/gz_sim.launch.py" unless="$(var headless)">
         <arg name="gz_args" value="-r -v 4 $(var sdf_path)" />
+    </include>
+    <include file="$(find-pkg-share ros_gz_sim)/launch/gz_sim.launch.py" if="$(var headless)">
+        <arg name="gz_args" value="-r -s --headless-rendering -v 4 $(var sdf_path)" />
     </include>
 
     <!-- Spawn Roverto into Gazebo -->
     <node pkg="ros_gz_sim" exec="create"
           args="-name roverto -topic robot_description -z 0.05" />
 
-    <!-- Bridge Gazebo topics (/clock, /scan) to ROS 2 -->
+    <!-- Bridge Gazebo <-> ROS 2 topics (/clock, /scan, /cmd_vel, /odom, /tf, /joint_states) -->
     <node pkg="ros_gz_bridge" exec="parameter_bridge">
         <param name="config_file" value="$(var gazebo_config_path)" />
+        <param name="use_sim_time" value="$(var use_sim_time)" />
     </node>
 
     <!-- RViz will be uncommented once the .rviz config is ready

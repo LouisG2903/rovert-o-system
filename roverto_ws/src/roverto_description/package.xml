@@ -3,11 +3,16 @@
 <package format="3">
   <name>roverto_description</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>Rovert-O robot description (URDF/Xacro) driven by rover_calibration.yaml.</description>
   <maintainer email="gomezluis2907@gmail.com">gomezluis2907</maintainer>
-  <license>TODO: License declaration</license>
+  <license>MIT</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>xacro</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>urdf</exec_depend>
+  <exec_depend>rviz2</exec_depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>

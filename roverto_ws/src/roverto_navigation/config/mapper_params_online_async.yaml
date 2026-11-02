@@ -5,7 +5,6 @@ slam_toolbox:
     map_frame: map
     base_frame: base_footprint   # Change to base_link if your URDF root is base_link
     scan_topic: /scan
-    use_map_saver: true
     mode: mapping                # 'mapping' builds a map; 'localization' uses an existing map
 
     # 2. Ceres Solver Back-End Configuration
@@ -30,8 +29,8 @@ slam_toolbox:
     stack_size_to_use: 40000000     # 40 MB stack size for serializing large maps
 
     # Distance/Rotation thresholds to add a new node to the graph
-    minimum_travel_distance: 0.25   # Add a scan node every 25 cm of travel
-    minimum_travel_heading: 0.25    # Add a scan node every ~14.3 degrees (0.25 rad) of turn
+    minimum_travel_distance: 0.15   # Add a scan node every 15 cm of travel
+    minimum_travel_heading: 0.15    # Add a scan node every ~8.6 degrees (0.15 rad) of turn
 
     # 4. Scan Matching & Loop Closure Parameters
     use_scan_matching: true
@@ -58,8 +57,8 @@ slam_toolbox:
     loop_search_space_smear_deviation: 0.03
 
     # Odometry Trust Penalties
-    distance_variance_penalty: 0.5
-    angle_variance_penalty: 1.0
+    distance_variance_penalty: 0.8
+    angle_variance_penalty: 0.3
     fine_search_angle_offset: 0.00349
     coarse_search_angle_offset: 0.349
     coarse_angle_resolution: 0.0349

@@ -1,0 +1,27 @@
+<launch>
+  <!-- Master simulation launch: Gazebo + SLAM + LiDAR guard + simulated ESP32.
+       Start a mission by publishing std_msgs/Float32 (data 5.0) on /gs_command. -->
+  <arg name="use_sim_time" default="true" description="Use Gazebo clock"/>
+  <arg name="headless" default="false" description="Run Gazebo without GUI"/>
+
+  <include file="$(find-pkg-share roverto_gazebo)/launch/roverto_gazebo.launch.xml">
+    <arg name="use_sim_time" value="$(var use_sim_time)"/>
+    <arg name="headless" value="$(var headless)"/>
+  </include>
+
+  <include file="$(find-pkg-share roverto_navigation)/launch/slam.launch.xml">
+    <arg name="use_sim_time" value="$(var use_sim_time)"/>
+  </include>
+
+  <node pkg="roverto_autonomy" exec="lidar_guard_node" output="screen">
+    <param name="use_sim_time" value="$(var use_sim_time)"/>
+  </node>
+
+  <node pkg="roverto_autonomy" exec="sim_esp32_emulator_node" output="screen">
+    <param name="use_sim_time" value="$(var use_sim_time)"/>
+  </node>
+
+  <node pkg="roverto_autonomy" exec="map_compressor_node" output="screen">
+    <param name="use_sim_time" value="$(var use_sim_time)"/>
+  </node>
+</launch>

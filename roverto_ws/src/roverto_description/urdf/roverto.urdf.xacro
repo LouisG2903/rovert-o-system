@@ -1,6 +1,12 @@
 <?xml version="1.0"?>
 <robot name="roverto" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
+  <!-- ================= CALIBRATION (single source: rover_calibration.yaml) ================= -->
+  <xacro:arg name="calibration_file"
+             default="$(find roverto_description)/config/rover_calibration.yaml"/>
+  <xacro:property name="calibration_file" value="$(arg calibration_file)"/>
+  <xacro:property name="cal" value="${xacro.load_yaml(calibration_file)}"/>
+
   <!-- ================= CONSTANTS & DIMENSIONS ================= -->
   <!-- Chassis -->
   <xacro:property name="chassis_length" value="0.20"/>
@@ -9,13 +15,13 @@
   <xacro:property name="chassis_mass"   value="1.5"/>
 
   <!-- Wheels -->
-  <xacro:property name="wheel_radius"   value="0.0325"/>
+  <xacro:property name="wheel_radius"   value="${cal['wheel_radius']}"/>
   <xacro:property name="wheel_width"    value="0.027"/>
   <xacro:property name="wheel_mass"     value="0.1"/>
 
   <!-- Wheel Offsets -->
   <xacro:property name="wheel_x_offset" value="0.07"/>
-  <xacro:property name="wheel_y_offset" value="0.1135"/>
+  <xacro:property name="wheel_y_offset" value="${cal['wheel_y_offset']}"/>
   <xacro:property name="ground_clearance" value="0.015"/>
 
   <!-- Skid-steer calibration -->
@@ -24,8 +30,13 @@
   <!-- Effective track width = geometric track * slip_factor.
        Start at 1.0, then do a 360 deg in-place rotation test and set:
        slip_factor = commanded_yaw / actual_yaw  (typically 1.2 - 1.8 for skid-steer) -->
-  <xacro:property name="slip_factor" value="1.0"/>
-  <xacro:property name="wheel_separation" value="${2.0 * wheel_y_offset * slip_factor}"/>
+  <xacro:property name="slip_factor" value="${cal['slip_factor']}"/>
+  <!-- Effective track width (= 2 * wheel_y_offset * slip_factor), taken from the calibration YAML -->
+  <xacro:property name="wheel_separation" value="${cal['wheel_separation']}"/>
+
+  <!-- LiDAR mounting pose (base_link -> laser_frame) -->
+  <xacro:property name="lidar_xyz" value="${cal['lidar_xyz']}"/>
+  <xacro:property name="lidar_rpy" value="${cal['lidar_rpy']}"/>
 
   <!-- LD19 LiDAR -->
   <xacro:property name="lidar_radius" value="0.019"/>
@@ -138,7 +149,8 @@
   <joint name="lidar_joint" type="fixed">
     <parent link="base_link"/>
     <child link="laser_frame"/>
-    <origin xyz="0.0 0.0 ${chassis_height + (lidar_height / 2.0)}" rpy="0 0 0"/>
+    <origin xyz="${lidar_xyz[0]} ${lidar_xyz[1]} ${lidar_xyz[2]}"
+            rpy="${lidar_rpy[0]} ${lidar_rpy[1]} ${lidar_rpy[2]}"/>
   </joint>
 
   <link name="laser_frame">
@@ -203,7 +215,7 @@
       <right_joint>front_right_wheel_joint</right_joint>
       <right_joint>rear_right_wheel_joint</right_joint>
 
-      <!-- Kinematics geometric track (2 * wheel_y_offset = 0.227) scaled by slip_factor -->
+      <!-- Kinematics geometric track (2 * wheel_y_offset) scaled by slip_factor, from rover_calibration.yaml -->
       <wheel_separation>${wheel_separation}</wheel_separation>
       <wheel_radius>${wheel_radius}</wheel_radius>
 
