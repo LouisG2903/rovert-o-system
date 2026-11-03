@@ -1,0 +1,51 @@
+<launch>
+  <!-- Raspberry Pi 4 bringup for the physical rover (no Gazebo, no ESP32 emulator).
+       Wheel odometry + TF (odom -> base_footprint) come from esp32_bridge_node. -->
+  <arg name="use_sim_time" default="false" description="Always false on hardware"/>
+  <arg name="serial_port" default="/dev/ttyAMA0" description="UART to the onboard ESP32"/>
+  <arg name="mock_serial" default="false" description="In-memory loopback instead of a real UART"/>
+  <arg name="launch_lidar_driver" default="false"
+       description="Start the LD19 driver (needs ldlidar_stl_ros2 cloned and built on the Pi)"/>
+
+  <let name="urdf_path" value="$(find-pkg-share roverto_description)/urdf/roverto.urdf.xacro"/>
+
+  <node pkg="robot_state_publisher" exec="robot_state_publisher">
+    <param name="robot_description" value="$(command 'xacro $(var urdf_path)')" type="str"/>
+    <param name="use_sim_time" value="$(var use_sim_time)"/>
+  </node>
+
+  <!-- Optional LD19 driver. Enable with launch_lidar_driver:=true once ldlidar_stl_ros2 is
+       cloned into the Pi workspace. Equivalent manual invocation:
+         ros2 run ldlidar_stl_ros2 ldlidar_stl_ros2_node, with ROS parameters
+           product_name=LDLiDAR_LD19  topic_name=scan  frame_id=laser_frame
+           port_name=/dev/ttyUSB0  port_baudrate=230400  laser_scan_dir=true
+       Verify the scan direction on the bench (REP-103 expects counter-clockwise). -->
+  <node pkg="ldlidar_stl_ros2" exec="ldlidar_stl_ros2_node" name="ld19" output="screen"
+        if="$(var launch_lidar_driver)">
+    <param name="product_name" value="LDLiDAR_LD19"/>
+    <param name="topic_name" value="scan"/>
+    <param name="frame_id" value="laser_frame"/>
+    <param name="port_name" value="/dev/ttyUSB0"/>
+    <param name="port_baudrate" value="230400"/>
+    <param name="laser_scan_dir" value="true"/>
+    <param name="enable_angle_crop_func" value="false"/>
+  </node>
+
+  <node pkg="roverto_autonomy" exec="esp32_bridge_node" output="screen">
+    <param name="use_sim_time" value="$(var use_sim_time)"/>
+    <param name="serial_port" value="$(var serial_port)"/>
+    <param name="mock_serial" value="$(var mock_serial)"/>
+  </node>
+
+  <node pkg="roverto_autonomy" exec="lidar_guard_node" output="screen">
+    <param name="use_sim_time" value="$(var use_sim_time)"/>
+  </node>
+
+  <include file="$(find-pkg-share roverto_navigation)/launch/slam.launch.xml">
+    <arg name="use_sim_time" value="$(var use_sim_time)"/>
+  </include>
+
+  <node pkg="roverto_autonomy" exec="map_compressor_node" output="screen">
+    <param name="use_sim_time" value="$(var use_sim_time)"/>
+  </node>
+</launch>

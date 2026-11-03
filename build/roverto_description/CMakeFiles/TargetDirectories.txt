@@ -1,0 +1,9 @@
+/home/gomezluis2907/rovert-o-system/build/roverto_description/CMakeFiles/uninstall.dir
+/home/gomezluis2907/rovert-o-system/build/roverto_description/CMakeFiles/roverto_description_uninstall.dir
+/home/gomezluis2907/rovert-o-system/build/roverto_description/CMakeFiles/test.dir
+/home/gomezluis2907/rovert-o-system/build/roverto_description/CMakeFiles/edit_cache.dir
+/home/gomezluis2907/rovert-o-system/build/roverto_description/CMakeFiles/rebuild_cache.dir
+/home/gomezluis2907/rovert-o-system/build/roverto_description/CMakeFiles/list_install_components.dir
+/home/gomezluis2907/rovert-o-system/build/roverto_description/CMakeFiles/install.dir
+/home/gomezluis2907/rovert-o-system/build/roverto_description/CMakeFiles/install/local.dir
+/home/gomezluis2907/rovert-o-system/build/roverto_description/CMakeFiles/install/strip.dir

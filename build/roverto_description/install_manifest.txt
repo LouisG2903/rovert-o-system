@@ -1,0 +1,17 @@
+/home/gomezluis2907/rovert-o-system/install/roverto_description/share/roverto_description/urdf/roverto.urdf.xacro
+/home/gomezluis2907/rovert-o-system/install/roverto_description/share/roverto_description/config/rover_calibration.yaml
+/home/gomezluis2907/rovert-o-system/install/roverto_description/share/ament_index/resource_index/package_run_dependencies/roverto_description
+/home/gomezluis2907/rovert-o-system/install/roverto_description/share/ament_index/resource_index/parent_prefix_path/roverto_description
+/home/gomezluis2907/rovert-o-system/install/roverto_description/share/roverto_description/environment/ament_prefix_path.sh
+/home/gomezluis2907/rovert-o-system/install/roverto_description/share/roverto_description/environment/ament_prefix_path.dsv
+/home/gomezluis2907/rovert-o-system/install/roverto_description/share/roverto_description/environment/path.sh
+/home/gomezluis2907/rovert-o-system/install/roverto_description/share/roverto_description/environment/path.dsv
+/home/gomezluis2907/rovert-o-system/install/roverto_description/share/roverto_description/local_setup.bash
+/home/gomezluis2907/rovert-o-system/install/roverto_description/share/roverto_description/local_setup.sh
+/home/gomezluis2907/rovert-o-system/install/roverto_description/share/roverto_description/local_setup.zsh
+/home/gomezluis2907/rovert-o-system/install/roverto_description/share/roverto_description/local_setup.dsv
+/home/gomezluis2907/rovert-o-system/install/roverto_description/share/roverto_description/package.dsv
+/home/gomezluis2907/rovert-o-system/install/roverto_description/share/ament_index/resource_index/packages/roverto_description
+/home/gomezluis2907/rovert-o-system/install/roverto_description/share/roverto_description/cmake/roverto_descriptionConfig.cmake
+/home/gomezluis2907/rovert-o-system/install/roverto_description/share/roverto_description/cmake/roverto_descriptionConfig-version.cmake
+/home/gomezluis2907/rovert-o-system/install/roverto_description/share/roverto_description/package.xml

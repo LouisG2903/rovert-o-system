@@ -3,6 +3,7 @@
        Start a mission by publishing std_msgs/Float32 (data 5.0) on /gs_command. -->
   <arg name="use_sim_time" default="true" description="Use Gazebo clock"/>
   <arg name="headless" default="false" description="Run Gazebo without GUI"/>
+  <arg name="use_rviz" default="true" description="Launch RViz2 with the SLAM view (use_rviz:=false to disable)"/>
 
   <include file="$(find-pkg-share roverto_gazebo)/launch/roverto_gazebo.launch.xml">
     <arg name="use_sim_time" value="$(var use_sim_time)"/>
@@ -22,6 +23,11 @@
   </node>
 
   <node pkg="roverto_autonomy" exec="map_compressor_node" output="screen">
+    <param name="use_sim_time" value="$(var use_sim_time)"/>
+  </node>
+
+  <node pkg="rviz2" exec="rviz2" output="screen" if="$(var use_rviz)"
+        args="-d $(find-pkg-share roverto_navigation)/rviz/slam_view.rviz">
     <param name="use_sim_time" value="$(var use_sim_time)"/>
   </node>
 </launch>

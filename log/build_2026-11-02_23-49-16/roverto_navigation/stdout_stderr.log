@@ -1,0 +1,26 @@
+-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/gomezluis2907/rovert-o-system/build/roverto_navigation
+-- Install configuration: ""
+-- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/config
+-- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/config/mapper_params_online_async.yaml
+-- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/launch
+-- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/launch/slam.launch.xml
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/rviz
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/rviz/slam_view.rviz
+-- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/ament_index/resource_index/package_run_dependencies/roverto_navigation
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/ament_index/resource_index/parent_prefix_path/roverto_navigation
+-- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/environment/ament_prefix_path.sh
+-- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/environment/path.sh
+-- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/environment/path.dsv
+-- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/local_setup.bash
+-- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/local_setup.sh
+-- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/local_setup.zsh
+-- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/local_setup.dsv
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/package.dsv
+-- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/ament_index/resource_index/packages/roverto_navigation
+-- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/cmake/roverto_navigationConfig.cmake
+-- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/cmake/roverto_navigationConfig-version.cmake
+-- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/package.xml

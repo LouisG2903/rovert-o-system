@@ -1,0 +1,67 @@
+slam_toolbox:
+  ros__parameters:
+    # 1. Coordinate Frames & Topics
+    odom_frame: odom
+    map_frame: map
+    base_frame: base_footprint   # Change to base_link if your URDF root is base_link
+    scan_topic: /scan
+    mode: mapping                # 'mapping' builds a map; 'localization' uses an existing map
+
+    # 2. Ceres Solver Back-End Configuration
+    solver_plugin: solver_plugins::CeresSolver
+    ceres_linear_solver: SPARSE_NORMAL_CHOLESKY
+    ceres_preconditioner: SCHUR_JACOBI
+    ceres_trust_strategy: LEVENBERG_MARQUARDT
+    ceres_dogleg_type: TRADITIONAL_DOGLEG
+    ceres_loss_function: None
+
+    # 3. Map & Pose-Graph Update Rules
+    debug_logging: false
+    throttle_scans: 1
+    transform_publish_period: 0.02  # 50 Hz broadcast of the map -> odom transform
+    map_update_interval: 2.0        # Rebuild the /map OccupancyGrid every 2.0 seconds
+    resolution: 0.05                # 5 cm per pixel grid resolution
+    min_laser_range: 0.05           # Ignore returns closer than 5 cm (chassis self-hits)
+    max_laser_range: 12.0           # Match your LiDAR's max effective range (e.g., 12m for LD19)
+    minimum_time_interval: 0.5
+    transform_timeout: 0.2
+    tf_buffer_duration: 30.0
+    stack_size_to_use: 40000000     # 40 MB stack size for serializing large maps
+
+    # Distance/Rotation thresholds to add a new node to the graph
+    minimum_travel_distance: 0.15   # Add a scan node every 15 cm of travel
+    minimum_travel_heading: 0.15    # Add a scan node every ~8.6 degrees (0.15 rad) of turn
+
+    # 4. Scan Matching & Loop Closure Parameters
+    use_scan_matching: true
+    use_scan_barycenter: true
+    scan_buffer_size: 10
+    scan_buffer_maximum_scan_distance: 10.0
+    link_match_minimum_response_fine: 0.1
+    link_scan_maximum_distance: 1.5
+
+    do_loop_closing: true
+    loop_search_maximum_distance: 3.0
+    loop_match_minimum_chain_size: 10
+    loop_match_maximum_variance_coarse: 3.0
+    loop_match_minimum_response_coarse: 0.35
+    loop_match_minimum_response_fine: 0.45
+
+    # Correlation Grid Search Windows
+    correlation_search_space_dimension: 0.5
+    correlation_search_space_resolution: 0.01
+    correlation_search_space_smear_deviation: 0.1
+
+    loop_search_space_dimension: 8.0
+    loop_search_space_resolution: 0.05
+    loop_search_space_smear_deviation: 0.03
+
+    # Odometry Trust Penalties
+    distance_variance_penalty: 0.8
+    angle_variance_penalty: 0.3
+    fine_search_angle_offset: 0.00349
+    coarse_search_angle_offset: 0.349
+    coarse_angle_resolution: 0.0349
+    minimum_angle_penalty: 0.9
+    minimum_distance_penalty: 0.5
+    use_response_expansion: true

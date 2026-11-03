@@ -1,0 +1,237 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+  <world name="tunnel_world">
+    <physics name="1ms" type="ignored">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+
+<!-- ================= PLUGINS ================= -->
+    <!-- Physics engine -->
+    <plugin
+      filename="gz-sim-physics-system"
+      name="gz::sim::systems::Physics">
+    </plugin>
+
+    <!-- Required for ros_gz_sim to spawn the rover --> 
+    <plugin
+      filename="gz-sim-user-commands-system"
+      name="gz::sim::systems::UserCommands">
+    </plugin>
+
+    <!-- Sensors -->
+    <plugin
+      filename="gz-sim-sensors-system"
+      name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+
+    <!-- Scene broadcast -->
+    <plugin
+      filename="gz-sim-scene-broadcaster-system"
+      name="gz::sim::systems::SceneBroadcaster">
+    </plugin>
+
+    <!-- Light -->
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+
+    <!-- Ground Plane -->
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>20 20</size>
+            </plane>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>20 20</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- ================= TUNNEL (straight corridor, 10 m long, 1.5 m clear width) ================= -->
+    <!-- Walls: x in [0, 10], inner faces at y = +-0.75 -->
+    <model name="wall_left">
+      <static>true</static>
+      <pose>5.0 0.775 0.25 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>10.0 0.05 0.5</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>10.0 0.05 0.5</size></box></geometry>
+          <material><ambient>0.76 0.60 0.42 1</ambient><diffuse>0.76 0.60 0.42 1</diffuse><specular>0.1 0.1 0.1 1</specular></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="wall_right">
+      <static>true</static>
+      <pose>5.0 -0.775 0.25 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>10.0 0.05 0.5</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>10.0 0.05 0.5</size></box></geometry>
+          <material><ambient>0.76 0.60 0.42 1</ambient><diffuse>0.76 0.60 0.42 1</diffuse><specular>0.1 0.1 0.1 1</specular></material>
+        </visual>
+      </link>
+    </model>
+    <!-- Pilasters (0.08 x 0.15 x 0.5) every 2 m per wall; right wall staggered by 1 m to break symmetry -->
+    <model name="rib_left_2">
+      <static>true</static>
+      <pose>2.0 0.675 0.25 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.08 0.15 0.5</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.08 0.15 0.5</size></box></geometry>
+          <material><ambient>0.62 0.48 0.33 1</ambient><diffuse>0.62 0.48 0.33 1</diffuse><specular>0.1 0.1 0.1 1</specular></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="rib_left_4">
+      <static>true</static>
+      <pose>4.0 0.675 0.25 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.08 0.15 0.5</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.08 0.15 0.5</size></box></geometry>
+          <material><ambient>0.62 0.48 0.33 1</ambient><diffuse>0.62 0.48 0.33 1</diffuse><specular>0.1 0.1 0.1 1</specular></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="rib_left_6">
+      <static>true</static>
+      <pose>6.0 0.675 0.25 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.08 0.15 0.5</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.08 0.15 0.5</size></box></geometry>
+          <material><ambient>0.62 0.48 0.33 1</ambient><diffuse>0.62 0.48 0.33 1</diffuse><specular>0.1 0.1 0.1 1</specular></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="rib_left_8">
+      <static>true</static>
+      <pose>8.0 0.675 0.25 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.08 0.15 0.5</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.08 0.15 0.5</size></box></geometry>
+          <material><ambient>0.62 0.48 0.33 1</ambient><diffuse>0.62 0.48 0.33 1</diffuse><specular>0.1 0.1 0.1 1</specular></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="rib_right_1">
+      <static>true</static>
+      <pose>1.0 -0.675 0.25 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.08 0.15 0.5</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.08 0.15 0.5</size></box></geometry>
+          <material><ambient>0.62 0.48 0.33 1</ambient><diffuse>0.62 0.48 0.33 1</diffuse><specular>0.1 0.1 0.1 1</specular></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="rib_right_3">
+      <static>true</static>
+      <pose>3.0 -0.675 0.25 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.08 0.15 0.5</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.08 0.15 0.5</size></box></geometry>
+          <material><ambient>0.62 0.48 0.33 1</ambient><diffuse>0.62 0.48 0.33 1</diffuse><specular>0.1 0.1 0.1 1</specular></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="rib_right_5">
+      <static>true</static>
+      <pose>5.0 -0.675 0.25 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.08 0.15 0.5</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.08 0.15 0.5</size></box></geometry>
+          <material><ambient>0.62 0.48 0.33 1</ambient><diffuse>0.62 0.48 0.33 1</diffuse><specular>0.1 0.1 0.1 1</specular></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="rib_right_7">
+      <static>true</static>
+      <pose>7.0 -0.675 0.25 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.08 0.15 0.5</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.08 0.15 0.5</size></box></geometry>
+          <material><ambient>0.62 0.48 0.33 1</ambient><diffuse>0.62 0.48 0.33 1</diffuse><specular>0.1 0.1 0.1 1</specular></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="rib_right_9">
+      <static>true</static>
+      <pose>9.0 -0.675 0.25 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.08 0.15 0.5</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.08 0.15 0.5</size></box></geometry>
+          <material><ambient>0.62 0.48 0.33 1</ambient><diffuse>0.62 0.48 0.33 1</diffuse><specular>0.1 0.1 0.1 1</specular></material>
+        </visual>
+      </link>
+    </model>
+    <!-- Static cylindrical obstacles (d=0.25 m, h=0.5 m) -->
+    <model name="obstacle_1">
+      <static>true</static>
+      <pose>2.0 0.15 0.25 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><cylinder><radius>0.125</radius><length>0.5</length></cylinder></geometry></collision>
+        <visual name="visual">
+          <geometry><cylinder><radius>0.125</radius><length>0.5</length></cylinder></geometry>
+          <material><ambient>0.7 0.2 0.1 1</ambient><diffuse>0.7 0.2 0.1 1</diffuse><specular>0.1 0.1 0.1 1</specular></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="obstacle_2">
+      <static>true</static>
+      <pose>4.0 -0.15 0.25 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><cylinder><radius>0.125</radius><length>0.5</length></cylinder></geometry></collision>
+        <visual name="visual">
+          <geometry><cylinder><radius>0.125</radius><length>0.5</length></cylinder></geometry>
+          <material><ambient>0.7 0.2 0.1 1</ambient><diffuse>0.7 0.2 0.1 1</diffuse><specular>0.1 0.1 0.1 1</specular></material>
+        </visual>
+      </link>
+    </model>
+
+  </world>
+</sdf>

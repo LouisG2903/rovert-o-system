@@ -1,0 +1,55 @@
+[1.672s] Invoking command in '/home/gomezluis2907/rovert-o-system/roverto_ws/src/roverto_autonomy': AMENT_PREFIX_PATH=/home/gomezluis2907/rovert-o-system/install/roverto_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gomezluis2907/rovert-o-system/install/roverto_description:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/gomezluis2907/rovert-o-system/build/roverto_autonomy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/roverto_autonomy build --build-base /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build install --record /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/install.log --install-scripts $base/lib/roverto_autonomy --single-version-externally-managed install_data
+[2.155s] running egg_info
+[2.155s] creating ../../../build/roverto_autonomy/roverto_autonomy.egg-info
+[2.189s] writing ../../../build/roverto_autonomy/roverto_autonomy.egg-info/PKG-INFO
+[2.189s] writing dependency_links to ../../../build/roverto_autonomy/roverto_autonomy.egg-info/dependency_links.txt
+[2.190s] writing entry points to ../../../build/roverto_autonomy/roverto_autonomy.egg-info/entry_points.txt
+[2.190s] writing requirements to ../../../build/roverto_autonomy/roverto_autonomy.egg-info/requires.txt
+[2.190s] writing top-level names to ../../../build/roverto_autonomy/roverto_autonomy.egg-info/top_level.txt
+[2.190s] writing manifest file '../../../build/roverto_autonomy/roverto_autonomy.egg-info/SOURCES.txt'
+[2.262s] reading manifest file '../../../build/roverto_autonomy/roverto_autonomy.egg-info/SOURCES.txt'
+[2.263s] writing manifest file '../../../build/roverto_autonomy/roverto_autonomy.egg-info/SOURCES.txt'
+[2.264s] running build
+[2.264s] running build_py
+[2.264s] creating /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build
+[2.264s] creating /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build/lib
+[2.264s] creating /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build/lib/roverto_autonomy
+[2.264s] copying roverto_autonomy/sim_esp32_emulator_node.py -> /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build/lib/roverto_autonomy
+[2.265s] copying roverto_autonomy/protocol.py -> /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build/lib/roverto_autonomy
+[2.265s] copying roverto_autonomy/calibration.py -> /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build/lib/roverto_autonomy
+[2.265s] copying roverto_autonomy/lidar_guard_node.py -> /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build/lib/roverto_autonomy
+[2.265s] copying roverto_autonomy/map_compressor_node.py -> /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build/lib/roverto_autonomy
+[2.265s] copying roverto_autonomy/__init__.py -> /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build/lib/roverto_autonomy
+[2.266s] copying roverto_autonomy/esp32_bridge_node.py -> /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build/lib/roverto_autonomy
+[2.266s] running install
+[2.276s] running install_lib
+[2.312s] creating /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages/roverto_autonomy
+[2.312s] copying /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build/lib/roverto_autonomy/sim_esp32_emulator_node.py -> /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages/roverto_autonomy
+[2.312s] copying /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build/lib/roverto_autonomy/protocol.py -> /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages/roverto_autonomy
+[2.313s] copying /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build/lib/roverto_autonomy/calibration.py -> /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages/roverto_autonomy
+[2.313s] copying /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build/lib/roverto_autonomy/lidar_guard_node.py -> /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages/roverto_autonomy
+[2.313s] copying /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build/lib/roverto_autonomy/map_compressor_node.py -> /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages/roverto_autonomy
+[2.313s] copying /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build/lib/roverto_autonomy/__init__.py -> /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages/roverto_autonomy
+[2.313s] copying /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build/lib/roverto_autonomy/esp32_bridge_node.py -> /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages/roverto_autonomy
+[2.314s] byte-compiling /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages/roverto_autonomy/sim_esp32_emulator_node.py to sim_esp32_emulator_node.cpython-312.pyc
+[2.318s] byte-compiling /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages/roverto_autonomy/protocol.py to protocol.cpython-312.pyc
+[2.319s] byte-compiling /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages/roverto_autonomy/calibration.py to calibration.cpython-312.pyc
+[2.320s] byte-compiling /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages/roverto_autonomy/lidar_guard_node.py to lidar_guard_node.cpython-312.pyc
+[2.322s] byte-compiling /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages/roverto_autonomy/map_compressor_node.py to map_compressor_node.cpython-312.pyc
+[2.324s] byte-compiling /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages/roverto_autonomy/__init__.py to __init__.cpython-312.pyc
+[2.324s] byte-compiling /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages/roverto_autonomy/esp32_bridge_node.py to esp32_bridge_node.cpython-312.pyc
+[2.328s] running install_data
+[2.328s] creating /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/share/ament_index
+[2.328s] creating /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/share/ament_index/resource_index
+[2.329s] creating /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/share/ament_index/resource_index/packages
+[2.329s] copying resource/roverto_autonomy -> /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/share/ament_index/resource_index/packages
+[2.329s] copying package.xml -> /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/share/roverto_autonomy
+[2.329s] running install_egg_info
+[2.368s] Copying ../../../build/roverto_autonomy/roverto_autonomy.egg-info to /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages/roverto_autonomy-0.0.0-py3.12.egg-info
+[2.369s] running install_scripts
+[2.596s] Installing esp32_bridge_node script to /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/roverto_autonomy
+[2.596s] Installing lidar_guard_node script to /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/roverto_autonomy
+[2.596s] Installing map_compressor_node script to /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/roverto_autonomy
+[2.596s] Installing sim_esp32_emulator_node script to /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/roverto_autonomy
+[2.597s] writing list of installed files to '/home/gomezluis2907/rovert-o-system/build/roverto_autonomy/install.log'
+[2.645s] Invoked command in '/home/gomezluis2907/rovert-o-system/roverto_ws/src/roverto_autonomy' returned '0': AMENT_PREFIX_PATH=/home/gomezluis2907/rovert-o-system/install/roverto_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gomezluis2907/rovert-o-system/install/roverto_description:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/gomezluis2907/rovert-o-system/build/roverto_autonomy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/roverto_autonomy build --build-base /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build install --record /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/install.log --install-scripts $base/lib/roverto_autonomy --single-version-externally-managed install_data

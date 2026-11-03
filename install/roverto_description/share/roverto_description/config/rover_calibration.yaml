@@ -1,0 +1,22 @@
+# Single source of truth for Rovert-O physical constants.
+# Loaded by roverto_description/urdf/roverto.urdf.xacro via xacro.load_yaml and
+# (hardware side) by roverto_autonomy nodes. Units: meters, radians, seconds.
+
+# ---- Kinematics & URDF ------------------------------------------------------
+wheel_radius: 0.0325        # m. Baseline from the existing URDF (NOTE: spec text said 0.05; measure the real wheel)
+wheel_y_offset: 0.1135      # m, wheel center to chassis centerline
+slip_factor: 1.0            # skid-steer: commanded_yaw / actual_yaw from a 360 deg in-place test (typ. 1.2-1.8)
+wheel_separation: 0.227     # m, EFFECTIVE track = 2 * wheel_y_offset * slip_factor (keep in sync when changing either)
+
+lidar_xyz: [0.0, 0.0, 0.11675]   # base_link -> laser_frame
+lidar_rpy: [0.0, 0.0, 0.0]
+
+# ---- Odometry & hardware ----------------------------------------------------
+ticks_per_meter: 1000.0     # placeholder until encoder calibration
+max_ticks_per_cycle: 500    # sanity clamp: reject per-packet tick deltas larger than this
+
+# ---- Safety guard -----------------------------------------------------------
+front_stop_distance: 0.45   # m
+flank_safe_distance: 0.30   # m
+linear_speed: 0.20          # m/s
+angular_speed: 0.50         # rad/s

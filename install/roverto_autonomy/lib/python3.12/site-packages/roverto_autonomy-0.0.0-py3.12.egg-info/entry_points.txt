@@ -1,0 +1,5 @@
+[console_scripts]
+esp32_bridge_node = roverto_autonomy.esp32_bridge_node:main
+lidar_guard_node = roverto_autonomy.lidar_guard_node:main
+map_compressor_node = roverto_autonomy.map_compressor_node:main
+sim_esp32_emulator_node = roverto_autonomy.sim_esp32_emulator_node:main

@@ -1,4 +1,5 @@
 import customtkinter as ctk
+from gs_serial_sender import GroundStationSerial
 
 # clase padre (window)
 class App(ctk.CTk):
@@ -9,6 +10,7 @@ class App(ctk.CTk):
         self.title(title)
         self.geometry(f"{size[0]}x{size[1]}")
         self.resizable(False, False)
+        self.serial = GroundStationSerial() # enlace serial con el ESP32-GS
         self.fonts = [ctk.CTkFont(family="Noto Sans Mono", size=16, weight="bold"), ctk.CTkFont(family="Noto Sans Mono", size=14, weight="normal")]
         
         #instancia de seccion (frame) de parametros del rover
@@ -59,11 +61,17 @@ class App(ctk.CTk):
 
         # evento del boton enviar
         def button_send_pressed(self):
-            pass
+            # lee la distancia y la envia por serial; ignora texto invalido
+            try:
+                distance = float(self.entry_distance.get().replace(",", "."))
+            except ValueError:
+                return
+            self.master.serial.send_advance(distance)
 
         # evento del boton detener
         def button_stop_pressed(self):
-            pass
+            # envia comando de detener por serial
+            self.master.serial.send_stop()
     
     # clase de seccion de parametros del rover (frame)    
     class RoverParams(ctk.CTkFrame):

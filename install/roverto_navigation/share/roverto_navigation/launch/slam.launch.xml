@@ -1,0 +1,19 @@
+<launch>
+  <!-- Allow toggling simulation time (true for Gazebo, false for physical rover) -->
+  <arg name="use_sim_time" default="true" description="Use simulation (Gazebo) clock if true"/>
+
+  <!-- Path to your custom YAML parameter file inside roverto_navigation -->
+  <arg name="slam_params_file"
+       default="$(find-pkg-share roverto_navigation)/config/mapper_params_online_async.yaml"
+       description="Full path to the ROS 2 parameters file to use for the slam_toolbox node"/>
+
+  <!-- Automatically transition the Jazzy LifecycleNode to Active -->
+  <arg name="autostart" default="true" description="Automatically configure and activate slam_toolbox"/>
+
+  <!-- Include slam_toolbox's built-in async launch file (handles Lifecycle transitions) -->
+  <include file="$(find-pkg-share slam_toolbox)/launch/online_async_launch.py">
+    <arg name="use_sim_time" value="$(var use_sim_time)"/>
+    <arg name="slam_params_file" value="$(var slam_params_file)"/>
+    <arg name="autostart" value="$(var autostart)"/>
+  </include>
+</launch>
