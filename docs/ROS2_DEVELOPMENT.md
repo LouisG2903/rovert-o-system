@@ -265,6 +265,25 @@ ros2 launch roverto_bringup real_rover.launch.xml serial_port:=/dev/ttyAMA0 laun
 
 ---
 
+## 6.1 Laptop LiDAR Bench Test (LD19 / STL-19P over USB-UART)
+
+`lidar_test.launch.xml` runs only the LiDAR driver, `robot_state_publisher` (URDF `laser_frame`), a fake identity `odom -> base_footprint` TF, `slam_toolbox` and RViz2. Move the LiDAR by hand to build the map. Do not combine it with `esp32_bridge_node`.
+
+```bash
+sudo usermod -aG dialout $USER   # once, then log out/in
+source /opt/ros/jazzy/setup.bash
+cd ~/rovert-o-system/roverto_ws && colcon build --symlink-install
+source install/setup.bash
+ros2 launch roverto_bringup lidar_test.launch.xml port_name:=/dev/ttyUSB0
+# in another terminal:
+ros2 topic hz /scan
+ros2 run tf2_ros tf2_echo base_footprint laser_frame
+ros2 topic echo /map --once --field info
+```
+On the Pi, `real_rover.launch.xml` takes `lidar_port:=<device>` together with `launch_lidar_driver:=true`.
+
+---
+
 ## 7. Running Unit Tests
 
 We have an automated `pytest` suite (`roverto_autonomy/test/test_protocol_and_bridge.py`) that verifies:

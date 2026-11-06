@@ -37,25 +37,3 @@ void setup()
     Serial.printf ("Velocidad minima alcanzable: %.2f cm/s\n", drive.minSpeed());
 }
 
-void loop()
-{
-    drive.update();                    // cierra maniobras temporizadas
-
-    if (!Serial.available()) return;
-    char c = Serial.read();
-
-    switch (c) {
-        case 'w': drive.forward();   break;
-        case 's': drive.backward();  break;
-        case 'a': drive.turnLeft();  break;
-        case 'd': drive.turnRight(); break;
-        case 'x': drive.stop();      break;
-        case 'b': drive.brake();     break;
-        case 't': drive.forward(-1, 3000); break;          // 3 s y para solo
-        case '+': drive.setCruiseSpeed(drive.cruiseSpeed() + 0.5f); break;
-        case '-': drive.setCruiseSpeed(drive.cruiseSpeed() - 0.5f); break;
-        default:  return;
-    }
-    Serial.printf("crucero=%.2f cm/s  L=%.2f  R=%.2f\n",
-                  drive.cruiseSpeed(), drive.leftSpeed(), drive.rightSpeed());
-}

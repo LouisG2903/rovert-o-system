@@ -5,7 +5,7 @@
 #include <soc/soc.h>
 #include <soc/rtc_cntl_reg.h>
 
-// Dirección MAC física confirmada de tu ESP32 Ground (Base Terrena)
+// Dirección MAC de ESP32-GS
 uint8_t macTerrena[] = {0x58, 0x2A, 0xBD, 0x71, 0xE5, 0xE4};
 
 #define TOTAL_FRAGMENTOS 50      // 50 fragmentos * 250 bytes = 12,500 bytes = 100,000 bits (100 Kbits)

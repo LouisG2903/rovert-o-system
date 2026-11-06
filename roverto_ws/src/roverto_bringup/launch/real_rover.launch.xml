@@ -4,6 +4,7 @@
   <arg name="use_sim_time" default="false" description="Always false on hardware"/>
   <arg name="serial_port" default="/dev/ttyAMA0" description="UART to the onboard ESP32"/>
   <arg name="mock_serial" default="false" description="In-memory loopback instead of a real UART"/>
+  <arg name="lidar_port" default="/dev/ttyUSB0" description="Serial port of the LD19 (e.g. /dev/ttyAMA0 on the Pi if wired to UART)"/>
   <arg name="launch_lidar_driver" default="false"
        description="Start the LD19 driver (needs ldlidar_stl_ros2 cloned and built on the Pi)"/>
 
@@ -25,7 +26,7 @@
     <param name="product_name" value="LDLiDAR_LD19"/>
     <param name="topic_name" value="scan"/>
     <param name="frame_id" value="laser_frame"/>
-    <param name="port_name" value="/dev/ttyUSB0"/>
+    <param name="port_name" value="$(var lidar_port)"/>
     <param name="port_baudrate" value="230400"/>
     <param name="laser_scan_dir" value="true"/>
     <param name="enable_angle_crop_func" value="false"/>
