@@ -1,4 +1,3 @@
-#include <pthread.h>
 /**
 * @file         ldlidar_logger.cpp
 * @author       LDRobot (support@ldrobot.com)
