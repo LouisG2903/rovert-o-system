@@ -1,0 +1,523 @@
+[0.181s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.181s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7fc4ac485d30>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fc4ac40b800>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fc4ac40b800>>, mixin_verb=('build',))
+[0.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.280s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/gomezluis2907/rovert-o-system'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['ignore', 'ignore_ament_install']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ignore'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ignore_ament_install'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['colcon_pkg']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'colcon_pkg'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['colcon_meta']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'colcon_meta'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['ros']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ros'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['cmake', 'python']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'cmake'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'python'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['python_setup_py']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'python_setup_py'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(firmware) by extensions ['ignore', 'ignore_ament_install']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(firmware) by extension 'ignore'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(firmware) by extension 'ignore_ament_install'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(firmware) by extensions ['colcon_pkg']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(firmware) by extension 'colcon_pkg'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(firmware) by extensions ['colcon_meta']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(firmware) by extension 'colcon_meta'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(firmware) by extensions ['ros']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(firmware) by extension 'ros'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(firmware) by extensions ['cmake', 'python']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(firmware) by extension 'cmake'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(firmware) by extension 'python'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(firmware) by extensions ['python_setup_py']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(firmware) by extension 'python_setup_py'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station) by extensions ['ignore', 'ignore_ament_install']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station) by extension 'ignore'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station) by extension 'ignore_ament_install'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station) by extensions ['colcon_pkg']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station) by extension 'colcon_pkg'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station) by extensions ['colcon_meta']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station) by extension 'colcon_meta'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station) by extensions ['ros']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station) by extension 'ros'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station) by extensions ['cmake', 'python']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station) by extension 'cmake'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station) by extension 'python'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station) by extensions ['python_setup_py']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station) by extension 'python_setup_py'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station/include) by extensions ['ignore', 'ignore_ament_install']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station/include) by extension 'ignore'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station/include) by extension 'ignore_ament_install'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station/include) by extensions ['colcon_pkg']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station/include) by extension 'colcon_pkg'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station/include) by extensions ['colcon_meta']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station/include) by extension 'colcon_meta'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station/include) by extensions ['ros']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station/include) by extension 'ros'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station/include) by extensions ['cmake', 'python']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station/include) by extension 'cmake'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station/include) by extension 'python'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station/include) by extensions ['python_setup_py']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station/include) by extension 'python_setup_py'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station/src) by extensions ['ignore', 'ignore_ament_install']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station/src) by extension 'ignore'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station/src) by extension 'ignore_ament_install'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station/src) by extensions ['colcon_pkg']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station/src) by extension 'colcon_pkg'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station/src) by extensions ['colcon_meta']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station/src) by extension 'colcon_meta'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station/src) by extensions ['ros']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station/src) by extension 'ros'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station/src) by extensions ['cmake', 'python']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station/src) by extension 'cmake'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station/src) by extension 'python'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station/src) by extensions ['python_setup_py']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_ground_station/src) by extension 'python_setup_py'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard) by extensions ['ignore', 'ignore_ament_install']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard) by extension 'ignore'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard) by extension 'ignore_ament_install'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard) by extensions ['colcon_pkg']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard) by extension 'colcon_pkg'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard) by extensions ['colcon_meta']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard) by extension 'colcon_meta'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard) by extensions ['ros']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard) by extension 'ros'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard) by extensions ['cmake', 'python']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard) by extension 'cmake'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard) by extension 'python'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard) by extensions ['python_setup_py']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard) by extension 'python_setup_py'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard/include) by extensions ['ignore', 'ignore_ament_install']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard/include) by extension 'ignore'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard/include) by extension 'ignore_ament_install'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard/include) by extensions ['colcon_pkg']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard/include) by extension 'colcon_pkg'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard/include) by extensions ['colcon_meta']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard/include) by extension 'colcon_meta'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard/include) by extensions ['ros']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard/include) by extension 'ros'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard/include) by extensions ['cmake', 'python']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard/include) by extension 'cmake'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard/include) by extension 'python'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard/include) by extensions ['python_setup_py']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard/include) by extension 'python_setup_py'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard/src) by extensions ['ignore', 'ignore_ament_install']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard/src) by extension 'ignore'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard/src) by extension 'ignore_ament_install'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard/src) by extensions ['colcon_pkg']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard/src) by extension 'colcon_pkg'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard/src) by extensions ['colcon_meta']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard/src) by extension 'colcon_meta'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard/src) by extensions ['ros']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard/src) by extension 'ros'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard/src) by extensions ['cmake', 'python']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard/src) by extension 'cmake'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard/src) by extension 'python'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard/src) by extensions ['python_setup_py']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(firmware/esp32_onboard/src) by extension 'python_setup_py'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ground_station_gui) by extensions ['ignore', 'ignore_ament_install']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ground_station_gui) by extension 'ignore'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ground_station_gui) by extension 'ignore_ament_install'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ground_station_gui) by extensions ['colcon_pkg']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ground_station_gui) by extension 'colcon_pkg'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ground_station_gui) by extensions ['colcon_meta']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ground_station_gui) by extension 'colcon_meta'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ground_station_gui) by extensions ['ros']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ground_station_gui) by extension 'ros'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ground_station_gui) by extensions ['cmake', 'python']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ground_station_gui) by extension 'cmake'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ground_station_gui) by extension 'python'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ground_station_gui) by extensions ['python_setup_py']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ground_station_gui) by extension 'python_setup_py'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws) by extensions ['ignore', 'ignore_ament_install']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws) by extension 'ignore'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws) by extension 'ignore_ament_install'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws) by extensions ['colcon_pkg']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws) by extension 'colcon_pkg'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws) by extensions ['colcon_meta']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws) by extension 'colcon_meta'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws) by extensions ['ros']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws) by extension 'ros'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws) by extensions ['cmake', 'python']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws) by extension 'cmake'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws) by extension 'python'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws) by extensions ['python_setup_py']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws) by extension 'python_setup_py'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src) by extension 'ignore'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src) by extension 'ignore_ament_install'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src) by extensions ['colcon_pkg']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src) by extension 'colcon_pkg'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src) by extensions ['colcon_meta']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src) by extension 'colcon_meta'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src) by extensions ['ros']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src) by extension 'ros'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src) by extensions ['cmake', 'python']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src) by extension 'cmake'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src) by extension 'python'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src) by extensions ['python_setup_py']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src) by extension 'python_setup_py'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_autonomy) by extensions ['ignore', 'ignore_ament_install']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_autonomy) by extension 'ignore'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_autonomy) by extension 'ignore_ament_install'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_autonomy) by extensions ['colcon_pkg']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_autonomy) by extension 'colcon_pkg'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_autonomy) by extensions ['colcon_meta']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_autonomy) by extension 'colcon_meta'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_autonomy) by extensions ['ros']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_autonomy) by extension 'ros'
+[0.344s] DEBUG:colcon.colcon_core.package_identification:Package 'roverto_ws/src/roverto_autonomy' with type 'ros.ament_python' and name 'roverto_autonomy'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_bringup) by extension 'ignore'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_bringup) by extension 'ignore_ament_install'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_bringup) by extensions ['colcon_pkg']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_bringup) by extension 'colcon_pkg'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_bringup) by extensions ['colcon_meta']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_bringup) by extension 'colcon_meta'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_bringup) by extensions ['ros']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_bringup) by extension 'ros'
+[0.345s] DEBUG:colcon.colcon_core.package_identification:Package 'roverto_ws/src/roverto_bringup' with type 'ros.ament_cmake' and name 'roverto_bringup'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_description) by extensions ['ignore', 'ignore_ament_install']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_description) by extension 'ignore'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_description) by extension 'ignore_ament_install'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_description) by extensions ['colcon_pkg']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_description) by extension 'colcon_pkg'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_description) by extensions ['colcon_meta']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_description) by extension 'colcon_meta'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_description) by extensions ['ros']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_description) by extension 'ros'
+[0.347s] DEBUG:colcon.colcon_core.package_identification:Package 'roverto_ws/src/roverto_description' with type 'ros.ament_cmake' and name 'roverto_description'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_gazebo) by extension 'ignore'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_gazebo) by extension 'ignore_ament_install'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_gazebo) by extensions ['colcon_pkg']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_gazebo) by extension 'colcon_pkg'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_gazebo) by extensions ['colcon_meta']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_gazebo) by extension 'colcon_meta'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_gazebo) by extensions ['ros']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_gazebo) by extension 'ros'
+[0.350s] DEBUG:colcon.colcon_core.package_identification:Package 'roverto_ws/src/roverto_gazebo' with type 'ros.ament_cmake' and name 'roverto_gazebo'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_navigation) by extension 'ignore'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_navigation) by extension 'ignore_ament_install'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_navigation) by extensions ['colcon_pkg']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_navigation) by extension 'colcon_pkg'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_navigation) by extensions ['colcon_meta']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_navigation) by extension 'colcon_meta'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_navigation) by extensions ['ros']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(roverto_ws/src/roverto_navigation) by extension 'ros'
+[0.351s] DEBUG:colcon.colcon_core.package_identification:Package 'roverto_ws/src/roverto_navigation' with type 'ros.ament_cmake' and name 'roverto_navigation'
+[0.351s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.351s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.352s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.352s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.352s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.383s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.383s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.387s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 319 installed packages in /opt/ros/jazzy
+[0.389s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.464s] Level 5:colcon.colcon_core.verb:set package 'roverto_description' build argument 'cmake_args' from command line to 'None'
+[0.464s] Level 5:colcon.colcon_core.verb:set package 'roverto_description' build argument 'cmake_target' from command line to 'None'
+[0.465s] Level 5:colcon.colcon_core.verb:set package 'roverto_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.465s] Level 5:colcon.colcon_core.verb:set package 'roverto_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.465s] Level 5:colcon.colcon_core.verb:set package 'roverto_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.465s] Level 5:colcon.colcon_core.verb:set package 'roverto_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.465s] Level 5:colcon.colcon_core.verb:set package 'roverto_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.465s] Level 5:colcon.colcon_core.verb:set package 'roverto_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.465s] Level 5:colcon.colcon_core.verb:set package 'roverto_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.465s] DEBUG:colcon.colcon_core.verb:Building package 'roverto_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/gomezluis2907/rovert-o-system/build/roverto_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/gomezluis2907/rovert-o-system/install/roverto_description', 'merge_install': False, 'path': '/home/gomezluis2907/rovert-o-system/roverto_ws/src/roverto_description', 'symlink_install': False, 'test_result_base': None}
+[0.465s] Level 5:colcon.colcon_core.verb:set package 'roverto_navigation' build argument 'cmake_args' from command line to 'None'
+[0.465s] Level 5:colcon.colcon_core.verb:set package 'roverto_navigation' build argument 'cmake_target' from command line to 'None'
+[0.465s] Level 5:colcon.colcon_core.verb:set package 'roverto_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.465s] Level 5:colcon.colcon_core.verb:set package 'roverto_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.465s] Level 5:colcon.colcon_core.verb:set package 'roverto_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[0.465s] Level 5:colcon.colcon_core.verb:set package 'roverto_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[0.466s] Level 5:colcon.colcon_core.verb:set package 'roverto_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[0.466s] Level 5:colcon.colcon_core.verb:set package 'roverto_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.466s] Level 5:colcon.colcon_core.verb:set package 'roverto_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.466s] DEBUG:colcon.colcon_core.verb:Building package 'roverto_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/gomezluis2907/rovert-o-system/build/roverto_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/gomezluis2907/rovert-o-system/install/roverto_navigation', 'merge_install': False, 'path': '/home/gomezluis2907/rovert-o-system/roverto_ws/src/roverto_navigation', 'symlink_install': False, 'test_result_base': None}
+[0.466s] Level 5:colcon.colcon_core.verb:set package 'roverto_autonomy' build argument 'cmake_args' from command line to 'None'
+[0.466s] Level 5:colcon.colcon_core.verb:set package 'roverto_autonomy' build argument 'cmake_target' from command line to 'None'
+[0.466s] Level 5:colcon.colcon_core.verb:set package 'roverto_autonomy' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.466s] Level 5:colcon.colcon_core.verb:set package 'roverto_autonomy' build argument 'cmake_clean_cache' from command line to 'False'
+[0.466s] Level 5:colcon.colcon_core.verb:set package 'roverto_autonomy' build argument 'cmake_clean_first' from command line to 'False'
+[0.466s] Level 5:colcon.colcon_core.verb:set package 'roverto_autonomy' build argument 'cmake_force_configure' from command line to 'False'
+[0.466s] Level 5:colcon.colcon_core.verb:set package 'roverto_autonomy' build argument 'ament_cmake_args' from command line to 'None'
+[0.466s] Level 5:colcon.colcon_core.verb:set package 'roverto_autonomy' build argument 'catkin_cmake_args' from command line to 'None'
+[0.466s] Level 5:colcon.colcon_core.verb:set package 'roverto_autonomy' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.466s] DEBUG:colcon.colcon_core.verb:Building package 'roverto_autonomy' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/gomezluis2907/rovert-o-system/build/roverto_autonomy', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/gomezluis2907/rovert-o-system/install/roverto_autonomy', 'merge_install': False, 'path': '/home/gomezluis2907/rovert-o-system/roverto_ws/src/roverto_autonomy', 'symlink_install': False, 'test_result_base': None}
+[0.467s] Level 5:colcon.colcon_core.verb:set package 'roverto_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.467s] Level 5:colcon.colcon_core.verb:set package 'roverto_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.467s] Level 5:colcon.colcon_core.verb:set package 'roverto_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.467s] Level 5:colcon.colcon_core.verb:set package 'roverto_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.467s] Level 5:colcon.colcon_core.verb:set package 'roverto_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.467s] Level 5:colcon.colcon_core.verb:set package 'roverto_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.467s] Level 5:colcon.colcon_core.verb:set package 'roverto_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.467s] Level 5:colcon.colcon_core.verb:set package 'roverto_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.467s] Level 5:colcon.colcon_core.verb:set package 'roverto_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.467s] DEBUG:colcon.colcon_core.verb:Building package 'roverto_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/gomezluis2907/rovert-o-system/build/roverto_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/gomezluis2907/rovert-o-system/install/roverto_gazebo', 'merge_install': False, 'path': '/home/gomezluis2907/rovert-o-system/roverto_ws/src/roverto_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.467s] Level 5:colcon.colcon_core.verb:set package 'roverto_bringup' build argument 'cmake_args' from command line to 'None'
+[0.468s] Level 5:colcon.colcon_core.verb:set package 'roverto_bringup' build argument 'cmake_target' from command line to 'None'
+[0.468s] Level 5:colcon.colcon_core.verb:set package 'roverto_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.468s] Level 5:colcon.colcon_core.verb:set package 'roverto_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.468s] Level 5:colcon.colcon_core.verb:set package 'roverto_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.468s] Level 5:colcon.colcon_core.verb:set package 'roverto_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.468s] Level 5:colcon.colcon_core.verb:set package 'roverto_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.468s] Level 5:colcon.colcon_core.verb:set package 'roverto_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.468s] Level 5:colcon.colcon_core.verb:set package 'roverto_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.468s] DEBUG:colcon.colcon_core.verb:Building package 'roverto_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/gomezluis2907/rovert-o-system/build/roverto_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/gomezluis2907/rovert-o-system/install/roverto_bringup', 'merge_install': False, 'path': '/home/gomezluis2907/rovert-o-system/roverto_ws/src/roverto_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.468s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.469s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.469s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/gomezluis2907/rovert-o-system/roverto_ws/src/roverto_description' with build type 'ament_cmake'
+[0.469s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/gomezluis2907/rovert-o-system/roverto_ws/src/roverto_description'
+[0.473s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.473s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.473s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.479s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/gomezluis2907/rovert-o-system/roverto_ws/src/roverto_navigation' with build type 'ament_cmake'
+[0.479s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/gomezluis2907/rovert-o-system/roverto_ws/src/roverto_navigation'
+[0.479s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.480s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.490s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gomezluis2907/rovert-o-system/build/roverto_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/gomezluis2907/rovert-o-system/roverto_ws/src/roverto_description -DCMAKE_INSTALL_PREFIX=/home/gomezluis2907/rovert-o-system/install/roverto_description
+[0.495s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gomezluis2907/rovert-o-system/build/roverto_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/gomezluis2907/rovert-o-system/roverto_ws/src/roverto_navigation -DCMAKE_INSTALL_PREFIX=/home/gomezluis2907/rovert-o-system/install/roverto_navigation
+[2.220s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gomezluis2907/rovert-o-system/build/roverto_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/gomezluis2907/rovert-o-system/roverto_ws/src/roverto_description -DCMAKE_INSTALL_PREFIX=/home/gomezluis2907/rovert-o-system/install/roverto_description
+[2.221s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gomezluis2907/rovert-o-system/build/roverto_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/gomezluis2907/rovert-o-system/build/roverto_description -- -j8 -l8
+[2.223s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gomezluis2907/rovert-o-system/build/roverto_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/gomezluis2907/rovert-o-system/roverto_ws/src/roverto_navigation -DCMAKE_INSTALL_PREFIX=/home/gomezluis2907/rovert-o-system/install/roverto_navigation
+[2.225s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gomezluis2907/rovert-o-system/build/roverto_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/gomezluis2907/rovert-o-system/build/roverto_navigation -- -j8 -l8
+[2.283s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gomezluis2907/rovert-o-system/build/roverto_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/gomezluis2907/rovert-o-system/build/roverto_description -- -j8 -l8
+[2.299s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gomezluis2907/rovert-o-system/build/roverto_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/gomezluis2907/rovert-o-system/build/roverto_description
+[2.301s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gomezluis2907/rovert-o-system/build/roverto_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/gomezluis2907/rovert-o-system/build/roverto_navigation -- -j8 -l8
+[2.303s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gomezluis2907/rovert-o-system/build/roverto_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/gomezluis2907/rovert-o-system/build/roverto_navigation
+[2.322s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roverto_description)
+[2.324s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gomezluis2907/rovert-o-system/build/roverto_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/gomezluis2907/rovert-o-system/build/roverto_description
+[2.327s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_description' for CMake module files
+[2.328s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_description' for CMake config files
+[2.328s] Level 1:colcon.colcon_core.shell:create_environment_hook('roverto_description', 'cmake_prefix_path')
+[2.328s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gomezluis2907/rovert-o-system/install/roverto_description/share/roverto_description/hook/cmake_prefix_path.ps1'
+[2.329s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gomezluis2907/rovert-o-system/install/roverto_description/share/roverto_description/hook/cmake_prefix_path.dsv'
+[2.329s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gomezluis2907/rovert-o-system/install/roverto_description/share/roverto_description/hook/cmake_prefix_path.sh'
+[2.331s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_description/bin'
+[2.331s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_description/lib/pkgconfig/roverto_description.pc'
+[2.331s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_description/lib/python3.12/site-packages'
+[2.332s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_description/bin'
+[2.332s] INFO:colcon.colcon_core.shell:Creating package script '/home/gomezluis2907/rovert-o-system/install/roverto_description/share/roverto_description/package.ps1'
+[2.334s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/gomezluis2907/rovert-o-system/install/roverto_description/share/roverto_description/package.dsv'
+[2.335s] INFO:colcon.colcon_core.shell:Creating package script '/home/gomezluis2907/rovert-o-system/install/roverto_description/share/roverto_description/package.sh'
+[2.336s] INFO:colcon.colcon_core.shell:Creating package script '/home/gomezluis2907/rovert-o-system/install/roverto_description/share/roverto_description/package.bash'
+[2.337s] INFO:colcon.colcon_core.shell:Creating package script '/home/gomezluis2907/rovert-o-system/install/roverto_description/share/roverto_description/package.zsh'
+[2.337s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/gomezluis2907/rovert-o-system/install/roverto_description/share/colcon-core/packages/roverto_description)
+[2.339s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roverto_description)
+[2.339s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_description' for CMake module files
+[2.340s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_description' for CMake config files
+[2.340s] Level 1:colcon.colcon_core.shell:create_environment_hook('roverto_description', 'cmake_prefix_path')
+[2.340s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gomezluis2907/rovert-o-system/install/roverto_description/share/roverto_description/hook/cmake_prefix_path.ps1'
+[2.341s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gomezluis2907/rovert-o-system/install/roverto_description/share/roverto_description/hook/cmake_prefix_path.dsv'
+[2.341s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gomezluis2907/rovert-o-system/install/roverto_description/share/roverto_description/hook/cmake_prefix_path.sh'
+[2.342s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_description/bin'
+[2.342s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_description/lib/pkgconfig/roverto_description.pc'
+[2.342s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_description/lib/python3.12/site-packages'
+[2.343s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_description/bin'
+[2.343s] INFO:colcon.colcon_core.shell:Creating package script '/home/gomezluis2907/rovert-o-system/install/roverto_description/share/roverto_description/package.ps1'
+[2.344s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/gomezluis2907/rovert-o-system/install/roverto_description/share/roverto_description/package.dsv'
+[2.345s] INFO:colcon.colcon_core.shell:Creating package script '/home/gomezluis2907/rovert-o-system/install/roverto_description/share/roverto_description/package.sh'
+[2.346s] INFO:colcon.colcon_core.shell:Creating package script '/home/gomezluis2907/rovert-o-system/install/roverto_description/share/roverto_description/package.bash'
+[2.346s] INFO:colcon.colcon_core.shell:Creating package script '/home/gomezluis2907/rovert-o-system/install/roverto_description/share/roverto_description/package.zsh'
+[2.347s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/gomezluis2907/rovert-o-system/install/roverto_description/share/colcon-core/packages/roverto_description)
+[2.349s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/gomezluis2907/rovert-o-system/roverto_ws/src/roverto_autonomy' with build type 'ament_python'
+[2.349s] Level 1:colcon.colcon_core.shell:create_environment_hook('roverto_autonomy', 'ament_prefix_path')
+[2.349s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gomezluis2907/rovert-o-system/install/roverto_autonomy/share/roverto_autonomy/hook/ament_prefix_path.ps1'
+[2.351s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gomezluis2907/rovert-o-system/install/roverto_autonomy/share/roverto_autonomy/hook/ament_prefix_path.dsv'
+[2.352s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gomezluis2907/rovert-o-system/install/roverto_autonomy/share/roverto_autonomy/hook/ament_prefix_path.sh'
+[2.353s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.353s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.358s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/gomezluis2907/rovert-o-system/roverto_ws/src/roverto_gazebo' with build type 'ament_cmake'
+[2.358s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/gomezluis2907/rovert-o-system/roverto_ws/src/roverto_gazebo'
+[2.358s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.358s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.364s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roverto_navigation)
+[2.365s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_navigation' for CMake module files
+[2.366s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gomezluis2907/rovert-o-system/build/roverto_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/gomezluis2907/rovert-o-system/build/roverto_navigation
+[2.366s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_navigation' for CMake config files
+[2.366s] Level 1:colcon.colcon_core.shell:create_environment_hook('roverto_navigation', 'cmake_prefix_path')
+[2.367s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/hook/cmake_prefix_path.ps1'
+[2.367s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/hook/cmake_prefix_path.dsv'
+[2.368s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/hook/cmake_prefix_path.sh'
+[2.369s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_navigation/bin'
+[2.369s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_navigation/lib/pkgconfig/roverto_navigation.pc'
+[2.369s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_navigation/lib/python3.12/site-packages'
+[2.370s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_navigation/bin'
+[2.370s] INFO:colcon.colcon_core.shell:Creating package script '/home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/package.ps1'
+[2.371s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/package.dsv'
+[2.372s] INFO:colcon.colcon_core.shell:Creating package script '/home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/package.sh'
+[2.372s] INFO:colcon.colcon_core.shell:Creating package script '/home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/package.bash'
+[2.373s] INFO:colcon.colcon_core.shell:Creating package script '/home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/package.zsh'
+[2.374s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/colcon-core/packages/roverto_navigation)
+[2.375s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roverto_navigation)
+[2.375s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_navigation' for CMake module files
+[2.376s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_navigation' for CMake config files
+[2.376s] Level 1:colcon.colcon_core.shell:create_environment_hook('roverto_navigation', 'cmake_prefix_path')
+[2.377s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/hook/cmake_prefix_path.ps1'
+[2.377s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/hook/cmake_prefix_path.dsv'
+[2.378s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/hook/cmake_prefix_path.sh'
+[2.379s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_navigation/bin'
+[2.379s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_navigation/lib/pkgconfig/roverto_navigation.pc'
+[2.380s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_navigation/lib/python3.12/site-packages'
+[2.380s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_navigation/bin'
+[2.381s] INFO:colcon.colcon_core.shell:Creating package script '/home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/package.ps1'
+[2.382s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/package.dsv'
+[2.383s] INFO:colcon.colcon_core.shell:Creating package script '/home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/package.sh'
+[2.383s] INFO:colcon.colcon_core.shell:Creating package script '/home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/package.bash'
+[2.384s] INFO:colcon.colcon_core.shell:Creating package script '/home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/package.zsh'
+[2.384s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/colcon-core/packages/roverto_navigation)
+[2.777s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/gomezluis2907/rovert-o-system/roverto_ws/src/roverto_autonomy'
+[2.777s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.777s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.788s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gomezluis2907/rovert-o-system/build/roverto_gazebo': AMENT_PREFIX_PATH=/home/gomezluis2907/rovert-o-system/install/roverto_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gomezluis2907/rovert-o-system/install/roverto_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/gomezluis2907/rovert-o-system/roverto_ws/src/roverto_gazebo -DCMAKE_INSTALL_PREFIX=/home/gomezluis2907/rovert-o-system/install/roverto_gazebo
+[3.898s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gomezluis2907/rovert-o-system/build/roverto_gazebo' returned '0': AMENT_PREFIX_PATH=/home/gomezluis2907/rovert-o-system/install/roverto_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gomezluis2907/rovert-o-system/install/roverto_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/gomezluis2907/rovert-o-system/roverto_ws/src/roverto_gazebo -DCMAKE_INSTALL_PREFIX=/home/gomezluis2907/rovert-o-system/install/roverto_gazebo
+[3.899s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gomezluis2907/rovert-o-system/build/roverto_gazebo': AMENT_PREFIX_PATH=/home/gomezluis2907/rovert-o-system/install/roverto_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gomezluis2907/rovert-o-system/install/roverto_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/gomezluis2907/rovert-o-system/build/roverto_gazebo -- -j8 -l8
+[3.951s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gomezluis2907/rovert-o-system/build/roverto_gazebo' returned '0': AMENT_PREFIX_PATH=/home/gomezluis2907/rovert-o-system/install/roverto_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gomezluis2907/rovert-o-system/install/roverto_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/gomezluis2907/rovert-o-system/build/roverto_gazebo -- -j8 -l8
+[3.953s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gomezluis2907/rovert-o-system/build/roverto_gazebo': AMENT_PREFIX_PATH=/home/gomezluis2907/rovert-o-system/install/roverto_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gomezluis2907/rovert-o-system/install/roverto_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/gomezluis2907/rovert-o-system/build/roverto_gazebo
+[3.972s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roverto_gazebo)
+[3.973s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_gazebo' for CMake module files
+[3.973s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gomezluis2907/rovert-o-system/build/roverto_gazebo' returned '0': AMENT_PREFIX_PATH=/home/gomezluis2907/rovert-o-system/install/roverto_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gomezluis2907/rovert-o-system/install/roverto_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/gomezluis2907/rovert-o-system/build/roverto_gazebo
+[3.974s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_gazebo' for CMake config files
+[3.974s] Level 1:colcon.colcon_core.shell:create_environment_hook('roverto_gazebo', 'cmake_prefix_path')
+[3.975s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gomezluis2907/rovert-o-system/install/roverto_gazebo/share/roverto_gazebo/hook/cmake_prefix_path.ps1'
+[3.975s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gomezluis2907/rovert-o-system/install/roverto_gazebo/share/roverto_gazebo/hook/cmake_prefix_path.dsv'
+[3.976s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gomezluis2907/rovert-o-system/install/roverto_gazebo/share/roverto_gazebo/hook/cmake_prefix_path.sh'
+[3.977s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_gazebo/bin'
+[3.977s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_gazebo/lib/pkgconfig/roverto_gazebo.pc'
+[3.977s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_gazebo/lib/python3.12/site-packages'
+[3.978s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_gazebo/bin'
+[3.979s] INFO:colcon.colcon_core.shell:Creating package script '/home/gomezluis2907/rovert-o-system/install/roverto_gazebo/share/roverto_gazebo/package.ps1'
+[3.979s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/gomezluis2907/rovert-o-system/install/roverto_gazebo/share/roverto_gazebo/package.dsv'
+[3.980s] INFO:colcon.colcon_core.shell:Creating package script '/home/gomezluis2907/rovert-o-system/install/roverto_gazebo/share/roverto_gazebo/package.sh'
+[3.981s] INFO:colcon.colcon_core.shell:Creating package script '/home/gomezluis2907/rovert-o-system/install/roverto_gazebo/share/roverto_gazebo/package.bash'
+[3.982s] INFO:colcon.colcon_core.shell:Creating package script '/home/gomezluis2907/rovert-o-system/install/roverto_gazebo/share/roverto_gazebo/package.zsh'
+[3.982s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/gomezluis2907/rovert-o-system/install/roverto_gazebo/share/colcon-core/packages/roverto_gazebo)
+[3.983s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roverto_gazebo)
+[3.984s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_gazebo' for CMake module files
+[3.985s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_gazebo' for CMake config files
+[3.985s] Level 1:colcon.colcon_core.shell:create_environment_hook('roverto_gazebo', 'cmake_prefix_path')
+[3.985s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gomezluis2907/rovert-o-system/install/roverto_gazebo/share/roverto_gazebo/hook/cmake_prefix_path.ps1'
+[3.986s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gomezluis2907/rovert-o-system/install/roverto_gazebo/share/roverto_gazebo/hook/cmake_prefix_path.dsv'
+[3.987s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gomezluis2907/rovert-o-system/install/roverto_gazebo/share/roverto_gazebo/hook/cmake_prefix_path.sh'
+[3.988s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_gazebo/bin'
+[3.988s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_gazebo/lib/pkgconfig/roverto_gazebo.pc'
+[3.988s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_gazebo/lib/python3.12/site-packages'
+[3.989s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_gazebo/bin'
+[3.989s] INFO:colcon.colcon_core.shell:Creating package script '/home/gomezluis2907/rovert-o-system/install/roverto_gazebo/share/roverto_gazebo/package.ps1'
+[3.990s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/gomezluis2907/rovert-o-system/install/roverto_gazebo/share/roverto_gazebo/package.dsv'
+[3.991s] INFO:colcon.colcon_core.shell:Creating package script '/home/gomezluis2907/rovert-o-system/install/roverto_gazebo/share/roverto_gazebo/package.sh'
+[3.992s] INFO:colcon.colcon_core.shell:Creating package script '/home/gomezluis2907/rovert-o-system/install/roverto_gazebo/share/roverto_gazebo/package.bash'
+[3.993s] INFO:colcon.colcon_core.shell:Creating package script '/home/gomezluis2907/rovert-o-system/install/roverto_gazebo/share/roverto_gazebo/package.zsh'
+[3.993s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/gomezluis2907/rovert-o-system/install/roverto_gazebo/share/colcon-core/packages/roverto_gazebo)
+[4.020s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: easy_install, bdist, bdist_wheel, build, compile_catalog, dist_info, install_data, install_headers, install, install_lib, upload, editable_wheel, build_py, sdist, init_catalog, alias, bdist_egg, register, bdist_dumb, extract_messages, build_ext, bdist_rpm, upload_docs, update_catalog, rotate, setopt, build_scripts, symlink_data, saveopts, install_egg_info, check, install_scripts, build_clib, develop, egg_info, clean, test
+[4.023s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gomezluis2907/rovert-o-system/roverto_ws/src/roverto_autonomy': AMENT_PREFIX_PATH=/home/gomezluis2907/rovert-o-system/install/roverto_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gomezluis2907/rovert-o-system/install/roverto_description:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/gomezluis2907/rovert-o-system/build/roverto_autonomy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/roverto_autonomy build --build-base /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build install --record /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/install.log --install-scripts $base/lib/roverto_autonomy --single-version-externally-managed install_data
+[4.995s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_autonomy' for CMake module files
+[4.996s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gomezluis2907/rovert-o-system/roverto_ws/src/roverto_autonomy' returned '0': AMENT_PREFIX_PATH=/home/gomezluis2907/rovert-o-system/install/roverto_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gomezluis2907/rovert-o-system/install/roverto_description:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/gomezluis2907/rovert-o-system/build/roverto_autonomy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/roverto_autonomy build --build-base /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build install --record /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/install.log --install-scripts $base/lib/roverto_autonomy --single-version-externally-managed install_data
+[4.997s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_autonomy' for CMake config files
+[4.998s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib'
+[4.998s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_autonomy/bin'
+[4.998s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/pkgconfig/roverto_autonomy.pc'
+[4.999s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages'
+[4.999s] Level 1:colcon.colcon_core.shell:create_environment_hook('roverto_autonomy', 'pythonpath')
+[4.999s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gomezluis2907/rovert-o-system/install/roverto_autonomy/share/roverto_autonomy/hook/pythonpath.ps1'
+[5.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gomezluis2907/rovert-o-system/install/roverto_autonomy/share/roverto_autonomy/hook/pythonpath.dsv'
+[5.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gomezluis2907/rovert-o-system/install/roverto_autonomy/share/roverto_autonomy/hook/pythonpath.sh'
+[5.001s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_autonomy/bin'
+[5.002s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roverto_autonomy)
+[5.002s] INFO:colcon.colcon_core.shell:Creating package script '/home/gomezluis2907/rovert-o-system/install/roverto_autonomy/share/roverto_autonomy/package.ps1'
+[5.003s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/gomezluis2907/rovert-o-system/install/roverto_autonomy/share/roverto_autonomy/package.dsv'
+[5.004s] INFO:colcon.colcon_core.shell:Creating package script '/home/gomezluis2907/rovert-o-system/install/roverto_autonomy/share/roverto_autonomy/package.sh'
+[5.004s] INFO:colcon.colcon_core.shell:Creating package script '/home/gomezluis2907/rovert-o-system/install/roverto_autonomy/share/roverto_autonomy/package.bash'
+[5.005s] INFO:colcon.colcon_core.shell:Creating package script '/home/gomezluis2907/rovert-o-system/install/roverto_autonomy/share/roverto_autonomy/package.zsh'
+[5.005s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/gomezluis2907/rovert-o-system/install/roverto_autonomy/share/colcon-core/packages/roverto_autonomy)
+[5.006s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/gomezluis2907/rovert-o-system/roverto_ws/src/roverto_bringup' with build type 'ament_cmake'
+[5.006s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/gomezluis2907/rovert-o-system/roverto_ws/src/roverto_bringup'
+[5.006s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.006s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.023s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gomezluis2907/rovert-o-system/build/roverto_bringup': AMENT_PREFIX_PATH=/home/gomezluis2907/rovert-o-system/install/roverto_gazebo:/home/gomezluis2907/rovert-o-system/install/roverto_autonomy:/home/gomezluis2907/rovert-o-system/install/roverto_navigation:/home/gomezluis2907/rovert-o-system/install/roverto_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gomezluis2907/rovert-o-system/install/roverto_gazebo:/home/gomezluis2907/rovert-o-system/install/roverto_navigation:/home/gomezluis2907/rovert-o-system/install/roverto_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/gomezluis2907/rovert-o-system/roverto_ws/src/roverto_bringup -DCMAKE_INSTALL_PREFIX=/home/gomezluis2907/rovert-o-system/install/roverto_bringup
+[6.908s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gomezluis2907/rovert-o-system/build/roverto_bringup' returned '0': AMENT_PREFIX_PATH=/home/gomezluis2907/rovert-o-system/install/roverto_gazebo:/home/gomezluis2907/rovert-o-system/install/roverto_autonomy:/home/gomezluis2907/rovert-o-system/install/roverto_navigation:/home/gomezluis2907/rovert-o-system/install/roverto_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gomezluis2907/rovert-o-system/install/roverto_gazebo:/home/gomezluis2907/rovert-o-system/install/roverto_navigation:/home/gomezluis2907/rovert-o-system/install/roverto_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/gomezluis2907/rovert-o-system/roverto_ws/src/roverto_bringup -DCMAKE_INSTALL_PREFIX=/home/gomezluis2907/rovert-o-system/install/roverto_bringup
+[6.909s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gomezluis2907/rovert-o-system/build/roverto_bringup': AMENT_PREFIX_PATH=/home/gomezluis2907/rovert-o-system/install/roverto_gazebo:/home/gomezluis2907/rovert-o-system/install/roverto_autonomy:/home/gomezluis2907/rovert-o-system/install/roverto_navigation:/home/gomezluis2907/rovert-o-system/install/roverto_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gomezluis2907/rovert-o-system/install/roverto_gazebo:/home/gomezluis2907/rovert-o-system/install/roverto_navigation:/home/gomezluis2907/rovert-o-system/install/roverto_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/gomezluis2907/rovert-o-system/build/roverto_bringup -- -j8 -l8
+[6.980s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gomezluis2907/rovert-o-system/build/roverto_bringup' returned '0': AMENT_PREFIX_PATH=/home/gomezluis2907/rovert-o-system/install/roverto_gazebo:/home/gomezluis2907/rovert-o-system/install/roverto_autonomy:/home/gomezluis2907/rovert-o-system/install/roverto_navigation:/home/gomezluis2907/rovert-o-system/install/roverto_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gomezluis2907/rovert-o-system/install/roverto_gazebo:/home/gomezluis2907/rovert-o-system/install/roverto_navigation:/home/gomezluis2907/rovert-o-system/install/roverto_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/gomezluis2907/rovert-o-system/build/roverto_bringup -- -j8 -l8
+[6.984s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gomezluis2907/rovert-o-system/build/roverto_bringup': AMENT_PREFIX_PATH=/home/gomezluis2907/rovert-o-system/install/roverto_gazebo:/home/gomezluis2907/rovert-o-system/install/roverto_autonomy:/home/gomezluis2907/rovert-o-system/install/roverto_navigation:/home/gomezluis2907/rovert-o-system/install/roverto_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gomezluis2907/rovert-o-system/install/roverto_gazebo:/home/gomezluis2907/rovert-o-system/install/roverto_navigation:/home/gomezluis2907/rovert-o-system/install/roverto_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/gomezluis2907/rovert-o-system/build/roverto_bringup
+[7.018s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roverto_bringup)
+[7.019s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_bringup' for CMake module files
+[7.021s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gomezluis2907/rovert-o-system/build/roverto_bringup' returned '0': AMENT_PREFIX_PATH=/home/gomezluis2907/rovert-o-system/install/roverto_gazebo:/home/gomezluis2907/rovert-o-system/install/roverto_autonomy:/home/gomezluis2907/rovert-o-system/install/roverto_navigation:/home/gomezluis2907/rovert-o-system/install/roverto_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gomezluis2907/rovert-o-system/install/roverto_gazebo:/home/gomezluis2907/rovert-o-system/install/roverto_navigation:/home/gomezluis2907/rovert-o-system/install/roverto_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/gomezluis2907/rovert-o-system/build/roverto_bringup
+[7.022s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_bringup' for CMake config files
+[7.023s] Level 1:colcon.colcon_core.shell:create_environment_hook('roverto_bringup', 'cmake_prefix_path')
+[7.024s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gomezluis2907/rovert-o-system/install/roverto_bringup/share/roverto_bringup/hook/cmake_prefix_path.ps1'
+[7.025s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gomezluis2907/rovert-o-system/install/roverto_bringup/share/roverto_bringup/hook/cmake_prefix_path.dsv'
+[7.026s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gomezluis2907/rovert-o-system/install/roverto_bringup/share/roverto_bringup/hook/cmake_prefix_path.sh'
+[7.028s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_bringup/bin'
+[7.028s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_bringup/lib/pkgconfig/roverto_bringup.pc'
+[7.029s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_bringup/lib/python3.12/site-packages'
+[7.030s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_bringup/bin'
+[7.031s] INFO:colcon.colcon_core.shell:Creating package script '/home/gomezluis2907/rovert-o-system/install/roverto_bringup/share/roverto_bringup/package.ps1'
+[7.033s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/gomezluis2907/rovert-o-system/install/roverto_bringup/share/roverto_bringup/package.dsv'
+[7.035s] INFO:colcon.colcon_core.shell:Creating package script '/home/gomezluis2907/rovert-o-system/install/roverto_bringup/share/roverto_bringup/package.sh'
+[7.036s] INFO:colcon.colcon_core.shell:Creating package script '/home/gomezluis2907/rovert-o-system/install/roverto_bringup/share/roverto_bringup/package.bash'
+[7.037s] INFO:colcon.colcon_core.shell:Creating package script '/home/gomezluis2907/rovert-o-system/install/roverto_bringup/share/roverto_bringup/package.zsh'
+[7.038s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/gomezluis2907/rovert-o-system/install/roverto_bringup/share/colcon-core/packages/roverto_bringup)
+[7.040s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roverto_bringup)
+[7.040s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_bringup' for CMake module files
+[7.042s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_bringup' for CMake config files
+[7.042s] Level 1:colcon.colcon_core.shell:create_environment_hook('roverto_bringup', 'cmake_prefix_path')
+[7.043s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gomezluis2907/rovert-o-system/install/roverto_bringup/share/roverto_bringup/hook/cmake_prefix_path.ps1'
+[7.044s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gomezluis2907/rovert-o-system/install/roverto_bringup/share/roverto_bringup/hook/cmake_prefix_path.dsv'
+[7.045s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gomezluis2907/rovert-o-system/install/roverto_bringup/share/roverto_bringup/hook/cmake_prefix_path.sh'
+[7.047s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_bringup/bin'
+[7.047s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_bringup/lib/pkgconfig/roverto_bringup.pc'
+[7.048s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_bringup/lib/python3.12/site-packages'
+[7.049s] Level 1:colcon.colcon_core.environment:checking '/home/gomezluis2907/rovert-o-system/install/roverto_bringup/bin'
+[7.050s] INFO:colcon.colcon_core.shell:Creating package script '/home/gomezluis2907/rovert-o-system/install/roverto_bringup/share/roverto_bringup/package.ps1'
+[7.052s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/gomezluis2907/rovert-o-system/install/roverto_bringup/share/roverto_bringup/package.dsv'
+[7.054s] INFO:colcon.colcon_core.shell:Creating package script '/home/gomezluis2907/rovert-o-system/install/roverto_bringup/share/roverto_bringup/package.sh'
+[7.056s] INFO:colcon.colcon_core.shell:Creating package script '/home/gomezluis2907/rovert-o-system/install/roverto_bringup/share/roverto_bringup/package.bash'
+[7.057s] INFO:colcon.colcon_core.shell:Creating package script '/home/gomezluis2907/rovert-o-system/install/roverto_bringup/share/roverto_bringup/package.zsh'
+[7.058s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/gomezluis2907/rovert-o-system/install/roverto_bringup/share/colcon-core/packages/roverto_bringup)
+[7.059s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[7.060s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[7.061s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[7.061s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[7.082s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.082s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.083s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[7.152s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[7.153s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/gomezluis2907/rovert-o-system/install/local_setup.ps1'
+[7.155s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/gomezluis2907/rovert-o-system/install/_local_setup_util_ps1.py'
+[7.159s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/gomezluis2907/rovert-o-system/install/setup.ps1'
+[7.162s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/gomezluis2907/rovert-o-system/install/local_setup.sh'
+[7.164s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/gomezluis2907/rovert-o-system/install/_local_setup_util_sh.py'
+[7.167s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/gomezluis2907/rovert-o-system/install/setup.sh'
+[7.170s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/gomezluis2907/rovert-o-system/install/local_setup.bash'
+[7.172s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/gomezluis2907/rovert-o-system/install/setup.bash'
+[7.174s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/gomezluis2907/rovert-o-system/install/local_setup.zsh'
+[7.176s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/gomezluis2907/rovert-o-system/install/setup.zsh'

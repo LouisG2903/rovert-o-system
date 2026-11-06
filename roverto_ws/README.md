@@ -177,6 +177,8 @@ All communication between the Raspberry Pi 4 and the onboard ESP32 uses packed *
 
 Make sure you are on **Ubuntu 24.04** with **ROS 2 Jazzy** and **Gazebo Harmonic** (`ros-jazzy-ros-gz`, `ros-jazzy-slam-toolbox`, `ros-jazzy-xacro`) installed.
 
+> **RViz2 is automatic:** `ros2 launch roverto_bringup sim_mission.launch.xml` now opens RViz2 pre-configured (`slam_view.rviz`) with `/map`, `/scan`, `TF`, and `RobotModel` (plus `/odom`). Pass `use_rviz:=false` for headless runs (e.g. `headless:=true use_rviz:=false`). Step 3 below is only needed if you disabled it.
+
 ### Step 1: Build the Workspace
 Open a terminal and build all packages using `--symlink-install` (so Python edits take effect without rebuilding):
 ```bash

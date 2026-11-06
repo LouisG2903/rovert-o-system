@@ -1,0 +1,24 @@
+[0.017s] Invoking command in '/home/gomezluis2907/rovert-o-system/build/roverto_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gomezluis2907/rovert-o-system/install/roverto_autonomy:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/gomezluis2907/rovert-o-system/build/roverto_navigation -- -j8 -l8
+[0.085s] Invoked command in '/home/gomezluis2907/rovert-o-system/build/roverto_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gomezluis2907/rovert-o-system/install/roverto_autonomy:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/gomezluis2907/rovert-o-system/build/roverto_navigation -- -j8 -l8
+[0.086s] Invoking command in '/home/gomezluis2907/rovert-o-system/build/roverto_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gomezluis2907/rovert-o-system/install/roverto_autonomy:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/gomezluis2907/rovert-o-system/build/roverto_navigation
+[0.100s] -- Install configuration: ""
+[0.100s] -- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/config
+[0.100s] -- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/config/mapper_params_online_async.yaml
+[0.101s] -- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/launch
+[0.101s] -- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/launch/slam.launch.xml
+[0.101s] -- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/ament_index/resource_index/package_run_dependencies/roverto_navigation
+[0.101s] -- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/ament_index/resource_index/parent_prefix_path/roverto_navigation
+[0.101s] -- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/environment/ament_prefix_path.sh
+[0.102s] -- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/environment/ament_prefix_path.dsv
+[0.102s] -- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/environment/path.sh
+[0.102s] -- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/environment/path.dsv
+[0.102s] -- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/local_setup.bash
+[0.102s] -- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/local_setup.sh
+[0.104s] -- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/local_setup.zsh
+[0.104s] -- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/local_setup.dsv
+[0.104s] -- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/package.dsv
+[0.104s] -- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/ament_index/resource_index/packages/roverto_navigation
+[0.104s] -- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/cmake/roverto_navigationConfig.cmake
+[0.104s] -- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/cmake/roverto_navigationConfig-version.cmake
+[0.104s] -- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/package.xml
+[0.232s] Invoked command in '/home/gomezluis2907/rovert-o-system/build/roverto_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gomezluis2907/rovert-o-system/install/roverto_autonomy:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/gomezluis2907/rovert-o-system/build/roverto_navigation

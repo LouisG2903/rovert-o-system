@@ -1,0 +1,30 @@
+[0.019s] Invoking command in '/home/gomezluis2907/rovert-o-system/build/roverto_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gomezluis2907/rovert-o-system/install/roverto_autonomy:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/gomezluis2907/rovert-o-system/build/roverto_navigation -- -j8 -l8
+[0.053s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.598s] -- Configuring done (0.6s)
+[0.603s] -- Generating done (0.0s)
+[0.606s] -- Build files have been written to: /home/gomezluis2907/rovert-o-system/build/roverto_navigation
+[0.638s] Invoked command in '/home/gomezluis2907/rovert-o-system/build/roverto_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gomezluis2907/rovert-o-system/install/roverto_autonomy:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/gomezluis2907/rovert-o-system/build/roverto_navigation -- -j8 -l8
+[0.644s] Invoking command in '/home/gomezluis2907/rovert-o-system/build/roverto_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gomezluis2907/rovert-o-system/install/roverto_autonomy:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/gomezluis2907/rovert-o-system/build/roverto_navigation
+[0.654s] -- Install configuration: ""
+[0.654s] -- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/config
+[0.654s] -- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/config/mapper_params_online_async.yaml
+[0.654s] -- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/launch
+[0.655s] -- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/launch/slam.launch.xml
+[0.655s] -- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/rviz
+[0.655s] -- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/rviz/slam_view.rviz
+[0.655s] -- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/ament_index/resource_index/package_run_dependencies/roverto_navigation
+[0.655s] -- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/ament_index/resource_index/parent_prefix_path/roverto_navigation
+[0.655s] -- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/environment/ament_prefix_path.sh
+[0.656s] -- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/environment/ament_prefix_path.dsv
+[0.656s] -- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/environment/path.sh
+[0.656s] -- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/environment/path.dsv
+[0.656s] -- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/local_setup.bash
+[0.656s] -- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/local_setup.sh
+[0.657s] -- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/local_setup.zsh
+[0.657s] -- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/local_setup.dsv
+[0.657s] -- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/package.dsv
+[0.657s] -- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/ament_index/resource_index/packages/roverto_navigation
+[0.657s] -- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/cmake/roverto_navigationConfig.cmake
+[0.657s] -- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/cmake/roverto_navigationConfig-version.cmake
+[0.658s] -- Up-to-date: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/package.xml
+[0.668s] Invoked command in '/home/gomezluis2907/rovert-o-system/build/roverto_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gomezluis2907/rovert-o-system/install/roverto_autonomy:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/gomezluis2907/rovert-o-system/build/roverto_navigation

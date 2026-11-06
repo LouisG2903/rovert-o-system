@@ -1,0 +1,39 @@
+<launch>
+  <!-- Laptop-only LD19 / STL-19P bench test: LiDAR -> /scan -> slam_toolbox -> /map (+ RViz2).
+       No ESP32: a fake identity odom -> base_footprint TF is published so slam_toolbox can run
+       (scan matching builds the map; move the LiDAR by hand). Do NOT use together with
+       esp32_bridge_node (duplicate odom TF). -->
+  <arg name="port_name" default="/dev/ttyUSB0" description="Serial port of the LD19 (USB-UART adapter)"/>
+  <arg name="use_rviz" default="true" description="Launch RViz2 with the SLAM view"/>
+  <arg name="use_static_odom" default="true" description="Publish identity odom -> base_footprint"/>
+
+  <let name="urdf_path" value="$(find-pkg-share roverto_description)/urdf/roverto.urdf.xacro"/>
+
+  <!-- base_footprint -> base_link -> laser_frame from the URDF -->
+  <node pkg="robot_state_publisher" exec="robot_state_publisher">
+    <param name="robot_description" value="$(command 'xacro $(var urdf_path)')" type="str"/>
+    <param name="use_sim_time" value="false"/>
+  </node>
+
+  <node pkg="ldlidar_stl_ros2" exec="ldlidar_stl_ros2_node" name="ld19" output="screen">
+    <param name="product_name" value="LDLiDAR_LD19"/>
+    <param name="topic_name" value="scan"/>
+    <param name="frame_id" value="laser_frame"/>
+    <param name="port_name" value="$(var port_name)"/>
+    <param name="port_baudrate" value="230400"/>
+    <param name="laser_scan_dir" value="true"/>
+    <param name="enable_angle_crop_func" value="false"/>
+  </node>
+
+  <node pkg="tf2_ros" exec="static_transform_publisher" name="fake_odom_to_base_footprint"
+        args="--frame-id odom --child-frame-id base_footprint" if="$(var use_static_odom)"/>
+
+  <include file="$(find-pkg-share roverto_navigation)/launch/slam.launch.xml">
+    <arg name="use_sim_time" value="false"/>
+  </include>
+
+  <node pkg="rviz2" exec="rviz2" output="screen" if="$(var use_rviz)"
+        args="-d $(find-pkg-share roverto_navigation)/rviz/slam_view.rviz">
+    <param name="use_sim_time" value="false"/>
+  </node>
+</launch>

@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: roverto-autonomy
+Version: 0.0.0
+Summary: Rovert-O autonomy nodes: UART bridge, wheel odometry and reactive safety guard.
+Maintainer: gomezluis2907
+Maintainer-email: gomezluis2907@gmail.com
+License: MIT

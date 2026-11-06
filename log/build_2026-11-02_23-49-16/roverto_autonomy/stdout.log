@@ -1,0 +1,22 @@
+running egg_info
+writing ../../../build/roverto_autonomy/roverto_autonomy.egg-info/PKG-INFO
+writing dependency_links to ../../../build/roverto_autonomy/roverto_autonomy.egg-info/dependency_links.txt
+writing entry points to ../../../build/roverto_autonomy/roverto_autonomy.egg-info/entry_points.txt
+writing requirements to ../../../build/roverto_autonomy/roverto_autonomy.egg-info/requires.txt
+writing top-level names to ../../../build/roverto_autonomy/roverto_autonomy.egg-info/top_level.txt
+reading manifest file '../../../build/roverto_autonomy/roverto_autonomy.egg-info/SOURCES.txt'
+writing manifest file '../../../build/roverto_autonomy/roverto_autonomy.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages/roverto_autonomy-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../../build/roverto_autonomy/roverto_autonomy.egg-info to /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages/roverto_autonomy-0.0.0-py3.12.egg-info
+running install_scripts
+Installing esp32_bridge_node script to /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/roverto_autonomy
+Installing lidar_guard_node script to /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/roverto_autonomy
+Installing map_compressor_node script to /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/roverto_autonomy
+Installing sim_esp32_emulator_node script to /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/roverto_autonomy
+writing list of installed files to '/home/gomezluis2907/rovert-o-system/build/roverto_autonomy/install.log'

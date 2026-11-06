@@ -1,0 +1,53 @@
+running egg_info
+creating ../../../build/roverto_autonomy/roverto_autonomy.egg-info
+writing ../../../build/roverto_autonomy/roverto_autonomy.egg-info/PKG-INFO
+writing dependency_links to ../../../build/roverto_autonomy/roverto_autonomy.egg-info/dependency_links.txt
+writing entry points to ../../../build/roverto_autonomy/roverto_autonomy.egg-info/entry_points.txt
+writing requirements to ../../../build/roverto_autonomy/roverto_autonomy.egg-info/requires.txt
+writing top-level names to ../../../build/roverto_autonomy/roverto_autonomy.egg-info/top_level.txt
+writing manifest file '../../../build/roverto_autonomy/roverto_autonomy.egg-info/SOURCES.txt'
+reading manifest file '../../../build/roverto_autonomy/roverto_autonomy.egg-info/SOURCES.txt'
+writing manifest file '../../../build/roverto_autonomy/roverto_autonomy.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build
+creating /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build/lib
+creating /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build/lib/roverto_autonomy
+copying roverto_autonomy/sim_esp32_emulator_node.py -> /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build/lib/roverto_autonomy
+copying roverto_autonomy/protocol.py -> /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build/lib/roverto_autonomy
+copying roverto_autonomy/calibration.py -> /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build/lib/roverto_autonomy
+copying roverto_autonomy/lidar_guard_node.py -> /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build/lib/roverto_autonomy
+copying roverto_autonomy/map_compressor_node.py -> /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build/lib/roverto_autonomy
+copying roverto_autonomy/__init__.py -> /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build/lib/roverto_autonomy
+copying roverto_autonomy/esp32_bridge_node.py -> /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build/lib/roverto_autonomy
+running install
+running install_lib
+creating /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages/roverto_autonomy
+copying /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build/lib/roverto_autonomy/sim_esp32_emulator_node.py -> /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages/roverto_autonomy
+copying /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build/lib/roverto_autonomy/protocol.py -> /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages/roverto_autonomy
+copying /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build/lib/roverto_autonomy/calibration.py -> /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages/roverto_autonomy
+copying /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build/lib/roverto_autonomy/lidar_guard_node.py -> /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages/roverto_autonomy
+copying /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build/lib/roverto_autonomy/map_compressor_node.py -> /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages/roverto_autonomy
+copying /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build/lib/roverto_autonomy/__init__.py -> /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages/roverto_autonomy
+copying /home/gomezluis2907/rovert-o-system/build/roverto_autonomy/build/lib/roverto_autonomy/esp32_bridge_node.py -> /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages/roverto_autonomy
+byte-compiling /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages/roverto_autonomy/sim_esp32_emulator_node.py to sim_esp32_emulator_node.cpython-312.pyc
+byte-compiling /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages/roverto_autonomy/protocol.py to protocol.cpython-312.pyc
+byte-compiling /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages/roverto_autonomy/calibration.py to calibration.cpython-312.pyc
+byte-compiling /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages/roverto_autonomy/lidar_guard_node.py to lidar_guard_node.cpython-312.pyc
+byte-compiling /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages/roverto_autonomy/map_compressor_node.py to map_compressor_node.cpython-312.pyc
+byte-compiling /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages/roverto_autonomy/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages/roverto_autonomy/esp32_bridge_node.py to esp32_bridge_node.cpython-312.pyc
+running install_data
+creating /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/share/ament_index
+creating /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/share/ament_index/resource_index
+creating /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/share/ament_index/resource_index/packages
+copying resource/roverto_autonomy -> /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/share/ament_index/resource_index/packages
+copying package.xml -> /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/share/roverto_autonomy
+running install_egg_info
+Copying ../../../build/roverto_autonomy/roverto_autonomy.egg-info to /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/python3.12/site-packages/roverto_autonomy-0.0.0-py3.12.egg-info
+running install_scripts
+Installing esp32_bridge_node script to /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/roverto_autonomy
+Installing lidar_guard_node script to /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/roverto_autonomy
+Installing map_compressor_node script to /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/roverto_autonomy
+Installing sim_esp32_emulator_node script to /home/gomezluis2907/rovert-o-system/install/roverto_autonomy/lib/roverto_autonomy
+writing list of installed files to '/home/gomezluis2907/rovert-o-system/build/roverto_autonomy/install.log'

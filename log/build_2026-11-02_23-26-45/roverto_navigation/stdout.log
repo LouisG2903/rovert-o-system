@@ -1,0 +1,37 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Configuring done (1.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/gomezluis2907/rovert-o-system/build/roverto_navigation
+-- Install configuration: ""
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/config
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/config/mapper_params_online_async.yaml
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/launch
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/launch/slam.launch.xml
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/ament_index/resource_index/package_run_dependencies/roverto_navigation
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/ament_index/resource_index/parent_prefix_path/roverto_navigation
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/environment/ament_prefix_path.sh
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/environment/ament_prefix_path.dsv
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/environment/path.sh
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/environment/path.dsv
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/local_setup.bash
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/local_setup.sh
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/local_setup.zsh
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/local_setup.dsv
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/package.dsv
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/ament_index/resource_index/packages/roverto_navigation
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/cmake/roverto_navigationConfig.cmake
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/cmake/roverto_navigationConfig-version.cmake
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_navigation/share/roverto_navigation/package.xml

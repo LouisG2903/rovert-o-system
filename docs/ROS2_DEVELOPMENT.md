@@ -177,6 +177,8 @@ All communication between the Raspberry Pi 4 and the onboard ESP32 uses packed *
 
 Make sure you are on **Ubuntu 24.04** with **ROS 2 Jazzy** and **Gazebo Harmonic** (`ros-jazzy-ros-gz`, `ros-jazzy-slam-toolbox`, `ros-jazzy-xacro`) installed.
 
+> **RViz2 is automatic:** `ros2 launch roverto_bringup sim_mission.launch.xml` now opens RViz2 pre-configured (`slam_view.rviz`) with `/map`, `/scan`, `TF`, and `RobotModel` (plus `/odom`). Pass `use_rviz:=false` for headless runs (e.g. `headless:=true use_rviz:=false`). Step 3 below is only needed if you disabled it.
+
 ### Step 1: Build the Workspace
 Open a terminal and build all packages using `--symlink-install` (so Python edits take effect without rebuilding):
 ```bash
@@ -260,6 +262,25 @@ ros2 launch roverto_bringup real_rover.launch.xml serial_port:=/dev/ttyAMA0
 ros2 launch roverto_bringup real_rover.launch.xml serial_port:=/dev/ttyAMA0 launch_lidar_driver:=true
 ```
 *(You can also test the hardware launch file on your laptop without an ESP32 plugged in by passing `mock_serial:=true`).*
+
+---
+
+## 6.1 Laptop LiDAR Bench Test (LD19 / STL-19P over USB-UART)
+
+`lidar_test.launch.xml` runs only the LiDAR driver, `robot_state_publisher` (URDF `laser_frame`), a fake identity `odom -> base_footprint` TF, `slam_toolbox` and RViz2. Move the LiDAR by hand to build the map. Do not combine it with `esp32_bridge_node`.
+
+```bash
+sudo usermod -aG dialout $USER   # once, then log out/in
+source /opt/ros/jazzy/setup.bash
+cd ~/rovert-o-system/roverto_ws && colcon build --symlink-install
+source install/setup.bash
+ros2 launch roverto_bringup lidar_test.launch.xml port_name:=/dev/ttyUSB0
+# in another terminal:
+ros2 topic hz /scan
+ros2 run tf2_ros tf2_echo base_footprint laser_frame
+ros2 topic echo /map --once --field info
+```
+On the Pi, `real_rover.launch.xml` takes `lidar_port:=<device>` together with `launch_lidar_driver:=true`.
 
 ---
 

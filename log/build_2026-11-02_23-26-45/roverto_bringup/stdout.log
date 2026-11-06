@@ -1,0 +1,37 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Configuring done (1.9s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/gomezluis2907/rovert-o-system/build/roverto_bringup
+-- Install configuration: ""
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_bringup/share/roverto_bringup/launch
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_bringup/share/roverto_bringup/launch/real_rover.launch.xml
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_bringup/share/roverto_bringup/launch/sim_mission.launch.xml
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_bringup/share/roverto_bringup/launch/.gitkeep
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_bringup/share/ament_index/resource_index/package_run_dependencies/roverto_bringup
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_bringup/share/ament_index/resource_index/parent_prefix_path/roverto_bringup
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_bringup/share/roverto_bringup/environment/ament_prefix_path.sh
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_bringup/share/roverto_bringup/environment/ament_prefix_path.dsv
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_bringup/share/roverto_bringup/environment/path.sh
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_bringup/share/roverto_bringup/environment/path.dsv
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_bringup/share/roverto_bringup/local_setup.bash
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_bringup/share/roverto_bringup/local_setup.sh
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_bringup/share/roverto_bringup/local_setup.zsh
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_bringup/share/roverto_bringup/local_setup.dsv
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_bringup/share/roverto_bringup/package.dsv
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_bringup/share/ament_index/resource_index/packages/roverto_bringup
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_bringup/share/roverto_bringup/cmake/roverto_bringupConfig.cmake
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_bringup/share/roverto_bringup/cmake/roverto_bringupConfig-version.cmake
+-- Installing: /home/gomezluis2907/rovert-o-system/install/roverto_bringup/share/roverto_bringup/package.xml

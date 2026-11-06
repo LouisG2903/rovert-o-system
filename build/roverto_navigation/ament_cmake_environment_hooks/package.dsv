@@ -1,0 +1,4 @@
+source;share/roverto_navigation/local_setup.bash
+source;share/roverto_navigation/local_setup.dsv
+source;share/roverto_navigation/local_setup.sh
+source;share/roverto_navigation/local_setup.zsh
